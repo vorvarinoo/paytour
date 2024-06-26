@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="fonts/opensans-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style/vendor-bundle.css">
+  <link rel="stylesheet" href="style/main.css">
+  <title>Гостиницы Омска</title>
+</head>
+
+<body class="indent-reset site">
+  <div aria-hidden="true" id="site-top"></div>
+  <div class="site__container">
+    <header class="site__header header header--absolute-bg-color header-auth-user">
+      <div class="header-bg"></div>
+      <div class="container">
+        <div class="header-top">
+          <div class="header__left">
+            <a href="/" class="logo">
+              <img src="img/logo.png" width="202" height="52" alt="Логотип PAY TOUR">
+            </a>
+          </div>
+          <div class="header__right">
+            <a class="header__question" href="#">
+              <img src="img/icon-question.svg" aria-hidden="true" width="26" height="26">ЗАДАТЬ ВОПРОС</a>
+            <a class="header__notify" href="#">
+              <img src="img/icon-notify.svg" aria-hidden="true" width="22" height="25">
+            </a>
+            <a class="header__chosen" href="page-no-favorites-panel.html">
+              <img src="img/icon-chosen.svg" aria-hidden="true" width="25" height="25">
+            </a>
+            <a class="header__login header-auth-user__logout" href="page-login.html">ВЫЙТИ</a>
+            <div class="header-auth-user__user-icon" href="page-login.html">
+              <img src="img/user-icon.jpg" alt="Фото пользователя">
+            </div>
+          </div>
+          <div class="burger">
+            <button class="btn-reset burger__btn" aria-label="Меню">
+              <svg width="28" height="18" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-burger"></use>
+              </svg>
+            </button>
+            <div id="dropdown" class="burger__dropdown d-block">
+              <div class="burger__dropdown-bg">
+                <nav>
+                  <div class="burger__dropdown-links">
+                    <a href="page-no-bookings-panel.html">Личный кабинет</a>
+                    <a href="#travel-blog">Блог о путешествиях</a>
+                    <a href="#main-info">Преимущества TourPay</a>
+                    <a href="#">Чат с поддержкой</a>
+                    <a href="page-no-favorites-panel.html">Мои избранные отели</a>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </header>
+    <div class="site__content">
+      <main>
+        <div class="container d-none d-lg-block">
+          <ul class="list-reset breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link">Гостиницы России</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="page-search.html" class="breadcrumbs__link">Гостиницы Омска</a>
+            </li>
+          </ul>
+        </div>
+        <div class="container">
+          <div class="page-search row">
+            <div class="page-search__top col-12 d-lg-none ">
+              <div class="page-search__info">
+                <div class="page-search__location mb-1">Омск, Россия</div>
+                <div class="page-search__date">16 мар 2024 — 17 мар 2024</div>
+              </div>
+              <div class="page-search__search">
+                <label class="page-search__label">
+                  <svg width="16" height="16" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-search"></use>
+                  </svg>
+                  <input class="page-search__input" type="text" placeholder="Поиск по названию отеля">
+                </label>
+                <button class="btn-reset page-search__btn page-search__btn--filters">
+                  <svg width="22" height="18" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-map-settings"></use>
+                  </svg>
+                </button>
+                <button class="btn-reset page-search__btn page-search__btn--map">
+                  <svg width="20" height="24" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-map"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <aside class="filters col-lg-4 page-search__filters">
+              <h2 class="filters__title d-lg-none">Фильтры</h2>
+              <div class="filters__content">
+                <div class="filters-group d-none d-lg-block">
+                  <div class="page-search__location">Омск, Россия</div>
+                  <div class="filters-group__info">
+                    <div class="page-search__date">16 мар 2024 — 17 мар 2024</div>
+                    <div class="filters-group__row">
+                      <div class="filters-group__info-item">1 номер для 2 гостей</div>
+                      <a href="#">
+                        <svg width="24" height="24" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-search"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="filters-group p-0">
+                  <div class="filters-view-toggle">
+                    <div class="filters-view-toggle__content">
+                      <button class="btn-reset filters-view-toggle__btn active">
+                        Список
+                      </button>
+                      <button class="btn-reset filters-view-toggle__btn ">
+                        Карта
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="filters-favorite">
+                    <a class="filters-favorite__link" href="page-search-favourites.html">
+                      <img src="img/icon_favourites-heart-blue.svg" aria-hidden="true" width="24" height="24">
+                      Избранное</a>
+                  </div>
+                </div>
+
+                <div class="filters-group">
+                  <h3 class="filters-group__title">Cортировка</h3>
+                  <select class="filters-select">
+                    <option value="popularity">По популярности</option>
+                    <option value="rating">По рейтингу</option>
+                  </select>
+                </div>
+
+                <div class="filters-group filters-slider">
+                  <h3 class="filters-group__title">Цена за ночь в <span>RUB</span></h3>
+                  <div class="filters-slider__input">
+                    <div class="filters-slider__field filters-slider__field--input-min">
+                      <input type="text" value="100 ₽">
+                    </div>
+                    <div class="filters-slider__field filters-slider__field--input-max">
+                      <input type="text" value="150000 ₽">
+                    </div>
+                  </div>
+                  <div class="filters-slider__slider">
+                    <div class="filters-slider__progress"></div>
+                  </div>
+                  <div class="filters-slider__range-input">
+                    <input type="range" class="filters-slider__range-min filters-slider__range" min="100" max="150000" value="100">
+                    <input type="range" class="filters-slider__range-max filters-slider__range" min="100" max="150000" value="150000">
+                  </div>
+                </div>
+
+                <div class="filters-group">
+                  <h3 class="filters-group__title">Тип размещения</h3>
+                  <div class="checkboxs-group">
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      Отели, меблированные комнаты
+                      <span class="checkbox__count">0</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      Хостелы, жилые помещения
+                      <span class="checkbox__count">0</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      Апартаменты, квартиры
+                      <span class="checkbox__count">0</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      Апарт-отели
+                      <span class="checkbox__count">0</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      Гостевые дома
+                      <span class="checkbox__count">0</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      Коттеджи, виллы, бунгало
+                      <span class="checkbox__count">0</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      Кемпинги
+                      <span class="checkbox__count">0</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      Глэмпинги
+                      <span class="checkbox__count">10</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      Санатории
+                      <span class="checkbox__count">10</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="filters-group filters-slider">
+                  <h3 class="filters-group__title mb-0">Расположение</h3>
+                  <p class="indent-reset filters-group__descr">от центра города</p>
+                  <div class="filters-slider__location">
+                    <input type="range" min="30" max="1000" value="30" class="filters-slider__range filters-slider__location-input">
+                    <div class="filters-slider__location-value">
+                      <input id="value-location" type="text" min="30" max="1000" value="30 км">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="filters-group">
+                  <h3 class="filters-group__title">Услуги и удобства</h3>
+                  <div class="filters-group__items">
+                    <div class="filters-group__item">
+                      <h4 class="filters-group__subtitle">В отеле:</h4>
+                      <div class="checkboxs-group">
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__box"></span>
+                          Бесплатный интернет
+                          <span class="checkbox__count">0</span>
+                        </label>
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__box"></span>
+                          Трансфер
+                          <span class="checkbox__count">10</span>
+                        </label>
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__box"></span>
+                          Парковка
+                          <span class="checkbox__count">0</span>
+                        </label>
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__box"></span>
+                          Бассейн
+                          <span class="checkbox__count">10</span>
+                        </label>
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__box"></span>
+                          Фитнес
+                          <span class="checkbox__count">0</span>
+                        </label>
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__box"></span>
+                          Бар или ресторан
+                          <span class="checkbox__count">10</span>
+                        </label>
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__box"></span>
+                          Спа-услуги
+                          <span class="checkbox__count">0</span>
+                        </label>
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__box"></span>
+                          Горнолыжный склон рядом
+                          <span class="checkbox__count">10</span>
+                        </label>
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__box"></span>
+                          Пляж рядом
+                          <span class="checkbox__count">0</span>
+                        </label>
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__box"></span>
+                          Джакузи
+                          <span class="checkbox__count">0</span>
+                        </label>
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__box"></span>
+                          Зарядка электромобилей
+                          <span class="checkbox__count">0</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="filters-group__item">
+                      <h4 class="filters-group__subtitle">В номере:</h4>
+                      <div class="checkboxs-group">
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__box"></span>
+                          Кондиционер
+                          <span class="checkbox__count">0</span>
+                        </label>
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__box"></span>
+                          Ванная комната в номере
+                          <span class="checkbox__count">0</span>
+                        </label>
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__box"></span>
+                          Кухня
+                          <span class="checkbox__count">0</span>
+                        </label>
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__box"></span>
+                          Балкон
+                          <span class="checkbox__count">0</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="filters-group">
+                  <h3 class="filters-group__title">Особенности размещения</h3>
+                  <div class="checkboxs-group">
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      Подходит для детей
+                      <span class="checkbox__count">0</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      Для гостей с ограниченными
+                      возможностями
+                      <span class="checkbox__count">0</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      Разрешено с домашними животными
+                      <span class="checkbox__count">0</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      Можно курить
+                      <span class="checkbox__count">0</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="filters-group">
+                  <h3 class="filters-group__title">Питание</h3>
+                  <div class="checkboxs-group">
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      Питание не включено
+                      <span class="checkbox__count">0</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      Завтрак включён
+                      <span class="checkbox__count">0</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      Завтрак + обед
+                      или ужин включены
+                      <span class="checkbox__count">0</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      Завтрак, обед и ужин включены
+                      <span class="checkbox__count">0</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      Всё включено
+                      <span class="checkbox__count">0</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="filters-group">
+                  <h3 class="filters-group__title">Количество звёзд</h3>
+                  <div class="checkboxs-group">
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      <div class="filters-group__stars-rating" title="Рейтинг 5">
+                        <span class="filters-group__item-star" style="--star-rating: 5;" aria-label="Рейтинг 5">
+                        </span>
+                      </div>
+                      <span class="checkbox__count">0</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      <div class="filters-group__stars-rating" title="Рейтинг 4">
+                        <span class="filters-group__item-star" style="--star-rating: 4;" aria-label="Рейтинг 4">
+                        </span>
+                      </div>
+                      <span class="checkbox__count">0</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      <div class="filters-group__stars-rating" title="Рейтинг 3">
+                        <span class="filters-group__item-star" style="--star-rating: 3;" aria-label="Рейтинг 3">
+                        </span>
+                      </div>
+                      <span class="checkbox__count">0</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      <div class="filters-group__stars-rating" title="Рейтинг 2">
+                        <span class="filters-group__item-star" style="--star-rating: 2;" aria-label="Рейтинг 2">
+                        </span>
+                      </div>
+                      <span class="checkbox__count">0</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      <div class="filters-group__stars-rating" title="Рейтинг 1">
+                        <span class="filters-group__item-star" style="--star-rating: 1;" aria-label="Рейтинг 1">
+                        </span>
+                      </div>
+                      или без звёзд
+                      <span class="checkbox__count">0</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="filters-group">
+                  <h3 class="filters-group__title">Оценка по отзывам</h3>
+                  <div class="checkboxs-group">
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      Супер: 9+
+                      <span class="checkbox__count">0</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      Отлично: 8+
+                      <span class="checkbox__count">0</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      Очень хорошо: 7+
+                      <span class="checkbox__count">0</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      Хорошо: 6+
+                      <span class="checkbox__count">0</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      Неплохо: 5+
+                      <span class="checkbox__count">0</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="filters-group">
+                  <h3 class="filters-group__title">Оплата и бронирование</h3>
+                  <div class="checkboxs-group">
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      Для бронирования не нужна
+                      карта
+                      <span class="checkbox__count">0</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      Есть бесплатная отмена
+                      <span class="checkbox__count">0</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      Оплата сейчас
+                      <span class="checkbox__count">0</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      Оплата на месте
+                      <span class="checkbox__count">0</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="filters-group">
+                  <h3 class="filters-group__title">Число комнат</h3>
+                  <div class="checkboxs-group">
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      1 комната
+                      <span class="checkbox__count">0</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      2 комнаты
+                      <span class="checkbox__count">0</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      3 комнаты
+                      <span class="checkbox__count">0</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      4 комнаты
+                      <span class="checkbox__count">0</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      5 комнат
+                      <span class="checkbox__count">0</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      6 комнат
+                      <span class="checkbox__count">0</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="filters-group">
+                  <h3 class="filters-group__title">Тип кроватей</h3>
+                  <div class="checkboxs-group">
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      Двуспальная кровать
+                      <span class="checkbox__count">0</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      Отдельные кровати
+                      <span class="checkbox__count">0</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="filters-group">
+                  <h3 class="filters-group__title">Название отеля</h3>
+                  <input class="filters-input" type="text" value="Hilton">
+                </div>
+
+                <div class="filters-group">
+                  <h3 class="filters-group__title">Достопримечательности</h3>
+                  <div class="checkboxs-group">
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      Советский парк
+                      <span class="checkbox__count">0</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      Парк Зеленый остров
+                      <span class="checkbox__count">0</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="filters-group">
+                  <h3 class="filters-group__title">Сеть отелей</h3>
+                  <div class="checkboxs-group">
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__box"></span>
+                      Ibis
+                      <span class="checkbox__count">0</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </aside>
+            <section class="right-search col-12 col-lg-8">
+
+              <div class="map map--unwrap">
+                <div class="map__group">
+                  <label class="checkbox map__checkbox">
+                    <input type="checkbox">
+                    <span class="checkbox__box map__box"></span>
+                    Искать при перемещении
+                  </label>
+
+                  <button class="btn-reset map__group-btn">
+                    <svg width="31" height="31" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-ruler"></use>
+                    </svg>
+                  </button>
+                  <button class="btn-reset map__group-btn">
+                    <svg width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    </svg>
+                  </button>
+                  <label class="map__label d-none d-sm-none d-lg-flex">
+                    <svg width="17" height="17" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-search"></use>
+                    </svg>
+                    <input class="map__input" type="text" placeholder="Конкретное место">
+                  </label>
+
+                </div>
+                <div class="map__content">
+
+                </div>
+
+                <button class="btn-reset map__btn map__btn--unwrap d-none">
+                  <svg width="9" height="16" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-arrow-small"></use>
+                  </svg>
+                  Развернуть</button>
+
+                <button class="btn-reset map__btn map__btn--rollup">
+                  <svg width="9" height="16" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-arrow-small"></use>
+                  </svg>
+                  Свернуть
+                </button>
+              </div>
+
+              <div class="page-search__content">
+                <ul class="list-reset right-search__list">
+                  <li class="right-search__item">
+                    <article class="search-card card" data-rating="8,7">
+                      <div class="search-card__inner">
+
+                        <div class="search-card__images">
+                          <img src="img/img_search-card.png">
+                          <img src="img/img_search-card.png">
+                          <img src="img/img_search-card.png">
+                          <div class="search-card__images-paginatioin">
+                            <span class="active"></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+
+
+
+                        <div class="search-card__content">
+                          <div class="card__stars-rating search-card__rating" title="Рейтинг 4">
+                            <span class="card__item-star" style="--star-rating: 4;" aria-label="Рейтинг 4">
+                            </span>
+                          </div>
+                          <h2 class="search-card__title">Отель 50|60 Омск</h2>
+                          <div class="search-card__info">
+                            <div class="search-card__location-info">
+                              <img class="search-card__img-mark" src="img/icon_mark.svg" width="14" height="18" aria-hidden="true">
+                              <div>
+                                <div class="search-card__name">улица Щербанёва, 20, Омск</div>
+                                <div class="search-card__distance">858м от центра Омска</div>
+                              </div>
+                            </div>
+                            <div class="search-card__icons">
+                              <svg width="32" height="32" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-wifi"></use>
+                              </svg>
+                              <svg width="32" height="32" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-car"></use>
+                              </svg>
+                              <svg width="32" height="32" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-stroller"></use>
+                              </svg>
+                              <img src="img/icon_dumbbells.svg" width="32" height="32" aria-hidden="true">
+                              <svg width="32" height="32" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-food-search-page"></use>
+                              </svg>
+                              <img src="img/icon_wheelchair.svg" width="32" height="32" aria-hidden="true">
+                            </div>
+                          </div>
+
+                          <div class="search-card__bottom">
+                            <div class="search-card__room">Номер Делюкс</div>
+                            <div class="search-card__info search-card__info--flex">
+                              <ul class="list-reset search-card__list">
+                                <li class="search-card__item">
+                                  <svg width="32" height="32" aria-hidden="true">
+                                    <use xlink:href="img/sprite.svg#icon-food-search-page"></use>
+                                  </svg>
+                                  Питание не вкл.
+                                </li>
+                                <li class="search-card__item">
+                                  <img src="img/icon_back-arrow-black.svg" width="32" height="32" aria-hidden="true">
+                                  Без беспл. отмены
+                                </li>
+                                <li class="search-card__item">
+                                  <svg width="32" height="32" aria-hidden="true">
+                                    <use xlink:href="img/sprite.svg#icon-wallet-black"></use>
+                                  </svg>
+                                  Оплата на местеs
+                                </li>
+                              </ul>
+                              <div class="search-card__cost">
+                                <div class="search-card__price">
+                                  <span>11 200</span><span>₽</span>
+                                </div>
+                                <span>для 2 взрослых на 1 ночь</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="search-card__buttons">
+                            <a class="search-card__btn" href="page-detailed-hotel.html" class="">На страницу отеля</a>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="right-search__item">
+                    <article class="search-card card" data-rating="8,7">
+                      <div class="search-card__inner">
+
+                        <div class="search-card__images">
+                          <img src="img/img_search-card.png">
+                          <img src="img/img_search-card.png">
+                          <img src="img/img_search-card.png">
+                          <div class="search-card__images-paginatioin">
+                            <span class="active"></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+
+
+
+                        <div class="search-card__content">
+                          <div class="card__stars-rating search-card__rating" title="Рейтинг 4">
+                            <span class="card__item-star" style="--star-rating: 4;" aria-label="Рейтинг 4">
+                            </span>
+                          </div>
+                          <h2 class="search-card__title">Отель 50|60 Омск</h2>
+                          <div class="search-card__info">
+                            <div class="search-card__location-info">
+                              <img class="search-card__img-mark" src="img/icon_mark.svg" width="14" height="18" aria-hidden="true">
+                              <div>
+                                <div class="search-card__name">улица Щербанёва, 20, Омск</div>
+                                <div class="search-card__distance">858м от центра Омска</div>
+                              </div>
+                            </div>
+                            <div class="search-card__icons">
+                              <svg width="32" height="32" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-wifi"></use>
+                              </svg>
+                              <svg width="32" height="32" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-car"></use>
+                              </svg>
+                              <svg width="32" height="32" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-stroller"></use>
+                              </svg>
+                              <img src="img/icon_dumbbells.svg" width="32" height="32" aria-hidden="true">
+                              <svg width="32" height="32" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-food-search-page"></use>
+                              </svg>
+                              <img src="img/icon_wheelchair.svg" width="32" height="32" aria-hidden="true">
+                            </div>
+                          </div>
+
+                          <div class="search-card__bottom">
+                            <div class="search-card__room">Номер Делюкс</div>
+                            <div class="search-card__info search-card__info--flex">
+                              <ul class="list-reset search-card__list">
+                                <li class="search-card__item">
+                                  <svg width="32" height="32" aria-hidden="true">
+                                    <use xlink:href="img/sprite.svg#icon-food-search-page"></use>
+                                  </svg>
+                                  Питание не вкл.
+                                </li>
+                                <li class="search-card__item">
+                                  <img src="img/icon_back-arrow-black.svg" width="32" height="32" aria-hidden="true">
+                                  Без беспл. отмены
+                                </li>
+                                <li class="search-card__item">
+                                  <svg width="32" height="32" aria-hidden="true">
+                                    <use xlink:href="img/sprite.svg#icon-wallet-black"></use>
+                                  </svg>
+                                  Оплата на местеs
+                                </li>
+                              </ul>
+                              <div class="search-card__cost">
+                                <div class="search-card__price">
+                                  <span>11 200</span><span>₽</span>
+                                </div>
+                                <span>для 2 взрослых на 1 ночь</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="search-card__buttons">
+                            <a class="search-card__btn" href="page-detailed-hotel.html" class="">На страницу отеля</a>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="right-search__item">
+                    <article class="search-card card" data-rating="8,7">
+                      <div class="search-card__inner">
+
+                        <div class="search-card__images">
+                          <img src="img/img_search-card.png">
+                          <img src="img/img_search-card.png">
+                          <img src="img/img_search-card.png">
+                          <div class="search-card__images-paginatioin">
+                            <span class="active"></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+
+
+
+                        <div class="search-card__content">
+                          <div class="card__stars-rating search-card__rating" title="Рейтинг 4">
+                            <span class="card__item-star" style="--star-rating: 4;" aria-label="Рейтинг 4">
+                            </span>
+                          </div>
+                          <h2 class="search-card__title">Отель 50|60 Омск</h2>
+                          <div class="search-card__info">
+                            <div class="search-card__location-info">
+                              <img class="search-card__img-mark" src="./img/icon_mark.svg" width="14" height="18" aria-hidden="true">
+                              <div>
+                                <div class="search-card__name">улица Щербанёва, 20, Омск</div>
+                                <div class="search-card__distance">858м от центра Омска</div>
+                              </div>
+                            </div>
+                            <div class="search-card__icons">
+                              <svg width="32" height="32" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-wifi"></use>
+                              </svg>
+                              <svg width="32" height="32" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-car"></use>
+                              </svg>
+                              <svg width="32" height="32" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-stroller"></use>
+                              </svg>
+                              <img src="./img/icon_dumbbells.svg" width="32" height="32" aria-hidden="true">
+                              <svg width="32" height="32" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-food-search-page"></use>
+                              </svg>
+                              <img src="./img/icon_wheelchair.svg" width="32" height="32" aria-hidden="true">
+                            </div>
+                          </div>
+
+                          <div class="search-card__bottom">
+                            <div class="search-card__room">Номер Делюкс</div>
+                            <div class="search-card__info search-card__info--flex">
+                              <ul class="list-reset search-card__list">
+                                <li class="search-card__item">
+                                  <svg width="32" height="32" aria-hidden="true">
+                                    <use xlink:href="img/sprite.svg#icon-food-search-page"></use>
+                                  </svg>
+                                  Питание не вкл.
+                                </li>
+                                <li class="search-card__item">
+                                  <img src="./img/icon_back-arrow-black.svg" width="32" height="32" aria-hidden="true">
+                                  Без беспл. отмены
+                                </li>
+                                <li class="search-card__item">
+                                  <svg width="32" height="32" aria-hidden="true">
+                                    <use xlink:href="img/sprite.svg#icon-wallet-black"></use>
+                                  </svg>
+                                  Оплата на местеs
+                                </li>
+                              </ul>
+                              <div class="search-card__cost">
+                                <div class="search-card__price">
+                                  <span>11 200</span><span>₽</span>
+                                </div>
+                                <span>для 2 взрослых на 1 ночь</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="search-card__buttons">
+                            <a class="search-card__btn" href="/page-detailed-hotel.html" class="">На страницу отеля</a>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="right-search__item">
+                    <article class="search-card card" data-rating="8,7">
+                      <div class="search-card__inner">
+
+                        <div class="search-card__images">
+                          <img src="./img/img_search-card.png">
+                          <img src="./img/img_search-card.png">
+                          <img src="./img/img_search-card.png">
+                          <div class="search-card__images-paginatioin">
+                            <span class="active"></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+
+
+
+                        <div class="search-card__content">
+                          <div class="card__stars-rating search-card__rating" title="Рейтинг 4">
+                            <span class="card__item-star" style="--star-rating: 4;" aria-label="Рейтинг 4">
+                            </span>
+                          </div>
+                          <h2 class="search-card__title">Отель 50|60 Омск</h2>
+                          <div class="search-card__info">
+                            <div class="search-card__location-info">
+                              <img class="search-card__img-mark" src="./img/icon_mark.svg" width="14" height="18" aria-hidden="true">
+                              <div>
+                                <div class="search-card__name">улица Щербанёва, 20, Омск</div>
+                                <div class="search-card__distance">858м от центра Омска</div>
+                              </div>
+                            </div>
+                            <div class="search-card__icons">
+                              <svg width="32" height="32" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-wifi"></use>
+                              </svg>
+                              <svg width="32" height="32" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-car"></use>
+                              </svg>
+                              <svg width="32" height="32" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-stroller"></use>
+                              </svg>
+                              <img src="./img/icon_dumbbells.svg" width="32" height="32" aria-hidden="true">
+                              <svg width="32" height="32" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-food-search-page"></use>
+                              </svg>
+                              <img src="./img/icon_wheelchair.svg" width="32" height="32" aria-hidden="true">
+                            </div>
+                          </div>
+
+                          <div class="search-card__bottom">
+                            <div class="search-card__room">Номер Делюкс</div>
+                            <div class="search-card__info search-card__info--flex">
+                              <ul class="list-reset search-card__list">
+                                <li class="search-card__item">
+                                  <svg width="32" height="32" aria-hidden="true">
+                                    <use xlink:href="img/sprite.svg#icon-food-search-page"></use>
+                                  </svg>
+                                  Питание не вкл.
+                                </li>
+                                <li class="search-card__item">
+                                  <img src="./img/icon_back-arrow-black.svg" width="32" height="32" aria-hidden="true">
+                                  Без беспл. отмены
+                                </li>
+                                <li class="search-card__item">
+                                  <svg width="32" height="32" aria-hidden="true">
+                                    <use xlink:href="img/sprite.svg#icon-wallet-black"></use>
+                                  </svg>
+                                  Оплата на местеs
+                                </li>
+                              </ul>
+                              <div class="search-card__cost">
+                                <div class="search-card__price">
+                                  <span>11 200</span><span>₽</span>
+                                </div>
+                                <span>для 2 взрослых на 1 ночь</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="search-card__buttons">
+                            <a class="search-card__btn" href="/page-detailed-hotel.html" class="">На страницу отеля</a>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="right-search__item">
+                    <article class="search-card card" data-rating="8,7">
+                      <div class="search-card__inner">
+
+                        <div class="search-card__images">
+                          <img src="./img/img_search-card.png">
+                          <img src="./img/img_search-card.png">
+                          <img src="./img/img_search-card.png">
+                          <div class="search-card__images-paginatioin">
+                            <span class="active"></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+
+
+
+                        <div class="search-card__content">
+                          <div class="card__stars-rating search-card__rating" title="Рейтинг 4">
+                            <span class="card__item-star" style="--star-rating: 4;" aria-label="Рейтинг 4">
+                            </span>
+                          </div>
+                          <h2 class="search-card__title">Отель 50|60 Омск</h2>
+                          <div class="search-card__info">
+                            <div class="search-card__location-info">
+                              <img class="search-card__img-mark" src="./img/icon_mark.svg" width="14" height="18" aria-hidden="true">
+                              <div>
+                                <div class="search-card__name">улица Щербанёва, 20, Омск</div>
+                                <div class="search-card__distance">858м от центра Омска</div>
+                              </div>
+                            </div>
+                            <div class="search-card__icons">
+                              <svg width="32" height="32" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-wifi"></use>
+                              </svg>
+                              <svg width="32" height="32" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-car"></use>
+                              </svg>
+                              <svg width="32" height="32" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-stroller"></use>
+                              </svg>
+                              <img src="./img/icon_dumbbells.svg" width="32" height="32" aria-hidden="true">
+                              <svg width="32" height="32" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-food-search-page"></use>
+                              </svg>
+                              <img src="./img/icon_wheelchair.svg" width="32" height="32" aria-hidden="true">
+                            </div>
+                          </div>
+
+                          <div class="search-card__bottom">
+                            <div class="search-card__room">Номер Делюкс</div>
+                            <div class="search-card__info search-card__info--flex">
+                              <ul class="list-reset search-card__list">
+                                <li class="search-card__item">
+                                  <svg width="32" height="32" aria-hidden="true">
+                                    <use xlink:href="img/sprite.svg#icon-food-search-page"></use>
+                                  </svg>
+                                  Питание не вкл.
+                                </li>
+                                <li class="search-card__item">
+                                  <img src="./img/icon_back-arrow-black.svg" width="32" height="32" aria-hidden="true">
+                                  Без беспл. отмены
+                                </li>
+                                <li class="search-card__item">
+                                  <svg width="32" height="32" aria-hidden="true">
+                                    <use xlink:href="img/sprite.svg#icon-wallet-black"></use>
+                                  </svg>
+                                  Оплата на местеs
+                                </li>
+                              </ul>
+                              <div class="search-card__cost">
+                                <div class="search-card__price">
+                                  <span>11 200</span><span>₽</span>
+                                </div>
+                                <span>для 2 взрослых на 1 ночь</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="search-card__buttons">
+                            <a class="search-card__btn" href="/page-detailed-hotel.html" class="">На страницу отеля</a>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="right-search__item">
+                    <article class="search-card card" data-rating="8,7">
+                      <div class="search-card__inner">
+
+                        <div class="search-card__images">
+                          <img src="./img/img_search-card.png">
+                          <img src="./img/img_search-card.png">
+                          <img src="./img/img_search-card.png">
+                          <div class="search-card__images-paginatioin">
+                            <span class="active"></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+
+
+
+                        <div class="search-card__content">
+                          <div class="card__stars-rating search-card__rating" title="Рейтинг 4">
+                            <span class="card__item-star" style="--star-rating: 4;" aria-label="Рейтинг 4">
+                            </span>
+                          </div>
+                          <h2 class="search-card__title">Отель 50|60 Омск</h2>
+                          <div class="search-card__info">
+                            <div class="search-card__location-info">
+                              <img class="search-card__img-mark" src="./img/icon_mark.svg" width="14" height="18" aria-hidden="true">
+                              <div>
+                                <div class="search-card__name">улица Щербанёва, 20, Омск</div>
+                                <div class="search-card__distance">858м от центра Омска</div>
+                              </div>
+                            </div>
+                            <div class="search-card__icons">
+                              <svg width="32" height="32" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-wifi"></use>
+                              </svg>
+                              <svg width="32" height="32" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-car"></use>
+                              </svg>
+                              <svg width="32" height="32" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-stroller"></use>
+                              </svg>
+                              <img src="./img/icon_dumbbells.svg" width="32" height="32" aria-hidden="true">
+                              <svg width="32" height="32" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-food-search-page"></use>
+                              </svg>
+                              <img src="./img/icon_wheelchair.svg" width="32" height="32" aria-hidden="true">
+                            </div>
+                          </div>
+
+                          <div class="search-card__bottom">
+                            <div class="search-card__room">Номер Делюкс</div>
+                            <div class="search-card__info search-card__info--flex">
+                              <ul class="list-reset search-card__list">
+                                <li class="search-card__item">
+                                  <svg width="32" height="32" aria-hidden="true">
+                                    <use xlink:href="img/sprite.svg#icon-food-search-page"></use>
+                                  </svg>
+                                  Питание не вкл.
+                                </li>
+                                <li class="search-card__item">
+                                  <img src="./img/icon_back-arrow-black.svg" width="32" height="32" aria-hidden="true">
+                                  Без беспл. отмены
+                                </li>
+                                <li class="search-card__item">
+                                  <svg width="32" height="32" aria-hidden="true">
+                                    <use xlink:href="img/sprite.svg#icon-wallet-black"></use>
+                                  </svg>
+                                  Оплата на местеs
+                                </li>
+                              </ul>
+                              <div class="search-card__cost">
+                                <div class="search-card__price">
+                                  <span>11 200</span><span>₽</span>
+                                </div>
+                                <span>для 2 взрослых на 1 ночь</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="search-card__buttons">
+                            <a class="search-card__btn" href="/page-detailed-hotel.html" class="">На страницу отеля</a>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="right-search__item">
+                    <article class="search-card card" data-rating="8,7">
+                      <div class="search-card__inner">
+
+                        <div class="search-card__images">
+                          <img src="./img/img_search-card.png">
+                          <img src="./img/img_search-card.png">
+                          <img src="./img/img_search-card.png">
+                          <div class="search-card__images-paginatioin">
+                            <span class="active"></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+
+
+
+                        <div class="search-card__content">
+                          <div class="card__stars-rating search-card__rating" title="Рейтинг 4">
+                            <span class="card__item-star" style="--star-rating: 4;" aria-label="Рейтинг 4">
+                            </span>
+                          </div>
+                          <h2 class="search-card__title">Отель 50|60 Омск</h2>
+                          <div class="search-card__info">
+                            <div class="search-card__location-info">
+                              <img class="search-card__img-mark" src="./img/icon_mark.svg" width="14" height="18" aria-hidden="true">
+                              <div>
+                                <div class="search-card__name">улица Щербанёва, 20, Омск</div>
+                                <div class="search-card__distance">858м от центра Омска</div>
+                              </div>
+                            </div>
+                            <div class="search-card__icons">
+                              <svg width="32" height="32" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-wifi"></use>
+                              </svg>
+                              <svg width="32" height="32" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-car"></use>
+                              </svg>
+                              <svg width="32" height="32" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-stroller"></use>
+                              </svg>
+                              <img src="./img/icon_dumbbells.svg" width="32" height="32" aria-hidden="true">
+                              <svg width="32" height="32" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-food-search-page"></use>
+                              </svg>
+                              <img src="./img/icon_wheelchair.svg" width="32" height="32" aria-hidden="true">
+                            </div>
+                          </div>
+
+                          <div class="search-card__bottom">
+                            <div class="search-card__room">Номер Делюкс</div>
+                            <div class="search-card__info search-card__info--flex">
+                              <ul class="list-reset search-card__list">
+                                <li class="search-card__item">
+                                  <svg width="32" height="32" aria-hidden="true">
+                                    <use xlink:href="img/sprite.svg#icon-food-search-page"></use>
+                                  </svg>
+                                  Питание не вкл.
+                                </li>
+                                <li class="search-card__item">
+                                  <img src="./img/icon_back-arrow-black.svg" width="32" height="32" aria-hidden="true">
+                                  Без беспл. отмены
+                                </li>
+                                <li class="search-card__item">
+                                  <svg width="32" height="32" aria-hidden="true">
+                                    <use xlink:href="img/sprite.svg#icon-wallet-black"></use>
+                                  </svg>
+                                  Оплата на местеs
+                                </li>
+                              </ul>
+                              <div class="search-card__cost">
+                                <div class="search-card__price">
+                                  <span>11 200</span><span>₽</span>
+                                </div>
+                                <span>для 2 взрослых на 1 ночь</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="search-card__buttons">
+                            <a class="search-card__btn" href="/page-detailed-hotel.html" class="">На страницу отеля</a>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </li>
+                </ul>
+
+                <div class="right-search__buttons">
+                  <a class="right-search__btn" href="#">
+                    Назад
+                  </a>
+                  <a class="right-search__btn right-search__btn--blue" href="#">
+                    Вперед
+                  </a>
+                </div>
+              </div>
+
+
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="site__footer footer">
+      <div class="footer__top">
+        <div class="container">
+          <div class="footer__container">
+            <div class="footer__content">
+              <div>
+                <h3 class="indent-reset footer__title">
+                  Клиентам
+                </h3>
+                <ul class="list-reset footer__list">
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">База знаний</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Служба поддержки</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Блог о путешествиях</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Популярные направления</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Юридическая информация</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Программа лояльности</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="indent-reset footer__title">
+                  Партнёрам
+                </h3>
+                <ul class="list-reset footer__list">
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Объектам развещения</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Турагенствам</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Корпоративным клиентам</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Рекламодателям</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Реклама и PR</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="indent-reset footer__title">
+                  Документы
+                </h3>
+                <ul class="list-reset footer__list">
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Правила условий бронирования</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Отказ от ответственности</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__container">
+            <div class="footer__row">
+              <h3 class="indent-reset footer__title">
+                Безопасность
+              </h3>
+              <div class="footer__text">
+                <p>Наши партнёры по проведению платежей гарантируют безопасность ваших данных своей мировой репутацией.</p>
+              </div>
+            </div>
+
+            <div class="footer__row d-md-flex justify-content-between">
+              <div>
+                <div class="footer__payments">
+                  <img class="footer__mir" src="img/icon-mir.png" alt="MIR">
+                  <img class="footer__visa" src="img/icon-visa.png" alt="VISA">
+                  <img class="footer__mastercard" src="img/icon-mastercard.png" alt="MasterCard">
+                </div>
+
+                <a class="footer__politics" href="#">Политика хранения и обработки персональных данных</a>
+              </div>
+
+              <a class="logo logo--footer" href="/">
+                <img src="img/logo-footer.png" width="289" height="75" alt="Логотип PAY TOUR"></a>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/vendor-bundle.js"></script>
+  <script src="js/main.js" type="module"></script>
+</body>
+
+</html>

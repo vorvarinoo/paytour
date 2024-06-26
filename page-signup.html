@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="fonts/opensans-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style/vendor-bundle.css">
+  <link rel="stylesheet" href="style/main.css">
+  <title>Регистрация</title>
+</head>
+
+<body class="indent-reset site">
+  <div aria-hidden="true" id="site-top"></div>
+  <div class="site__container">
+    <header class="site__header header header--absolute-bg-color">
+      <div class="header-bg"></div>
+      <div class="container">
+        <div class="header-top">
+          <div class="header__left">
+            <a href="/" class="logo">
+              <img src="img/logo.png" width="202" height="52" alt="Логотип PAY TOUR">
+            </a>
+          </div>
+          <div class="header__right">
+            <a class="header__question" href="#">
+              <img src="img/icon-question.svg" aria-hidden="true" width="26" height="26">ЗАДАТЬ ВОПРОС</a>
+            <a class="header__notify" href="#">
+              <img src="img/icon-notify.svg" aria-hidden="true" width="22" height="25">
+            </a>
+            <a class="header__chosen" href="page-no-favorites-panel.html">
+              <img src="img/icon-chosen.svg" aria-hidden="true" width="25" height="25">
+            </a>
+            <a class="header__login" href="page-login.html">ВОЙТИ</a>
+
+          </div>
+          <div class="burger">
+            <button class="btn-reset burger__btn" aria-label="Меню">
+              <svg width="28" height="18" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-burger"></use>
+              </svg>
+            </button>
+            <div id="dropdown" class="burger__dropdown d-block">
+              <div class="burger__dropdown-bg">
+                <nav>
+                  <div class="burger__dropdown-links">
+                    <a href="page-no-bookings-panel.html">Личный кабинет</a>
+                    <a href="#travel-blog">Блог о путешествиях</a>
+                    <a href="#main-info">Преимущества TourPay</a>
+                    <a href="#">Чат с поддержкой</a>
+                    <a href="page-no-favorites-panel.html">Мои избранные отели</a>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </header>
+    <div class="site__content">
+      <main>
+        <section class="auth signup-page">
+          <div class="container">
+            <div class="auth__content">
+              <h1 class="indent-reset auth__title">
+                Зарегистрируйте аккаунт
+              </h1>
+              <div class="tabs auth__tabs">
+                <div class="tabs__buttons auth__buttons">
+                  <button class="btn-reset tabs__btn">Номер телефона</button>
+                  <button class="btn-reset tabs__btn is-selected">Почта</button>
+                </div>
+                <div>
+                  <div>
+                    <form class="form form__inner auth-form" id="signup-form" action="">
+                      <div class="form__field auth-form__field">
+                        <label for="email" class="form__label auth-form__label">Почта</label>
+                        <input value="" type="email" class="form__input auth-form__input" id="email">
+                      </div>
+                      <div class="form__field auth-form__field">
+                        <label for="password" class="auth-form__label auth-form__field">Пароль</label>
+                        <input value="" type="password" class="form__input auth-form__input" id="password">
+                      </div>
+                      <button class="btn-reset form__btn auth-form__btn">Зарегистрироваться</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="auth__alternative-item">
+                <span class="auth__alternative-line"></span>
+                <span>или</span>
+                <span class="auth__alternative-line"></span>
+              </div>
+              <ul class="list-reset auth__list">
+                <li class="auth__item">
+                  <a href="#">
+                    <img src="img/icon-google.png" alt="Google">
+                  </a>
+                </li>
+                <li class="auth__item">
+                  <a href="#">
+                    <img src="img/icon-vk.png" alt="В контакте">
+                  </a>
+                </li>
+                <li class="auth__item">
+                  <a href="#">
+                    <img src="img/icon-state-services.png" alt="Гос услуги">
+                  </a>
+                </li>
+              </ul>
+              <label class="checkbox signup-page__checkbox">
+                <input type="checkbox">
+                <span class="checkbox__box"></span>
+                Я даю свое согласие на обработку персональных данных
+              </label>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="site__footer footer">
+      <div class="footer__top">
+        <div class="container">
+          <div class="footer__container">
+            <div class="footer__content">
+              <div>
+                <h3 class="indent-reset footer__title">
+                  Клиентам
+                </h3>
+                <ul class="list-reset footer__list">
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">База знаний</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Служба поддержки</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Блог о путешествиях</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Популярные направления</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Юридическая информация</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Программа лояльности</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="indent-reset footer__title">
+                  Партнёрам
+                </h3>
+                <ul class="list-reset footer__list">
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Объектам развещения</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Турагенствам</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Корпоративным клиентам</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Рекламодателям</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Реклама и PR</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="indent-reset footer__title">
+                  Документы
+                </h3>
+                <ul class="list-reset footer__list">
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Правила условий бронирования</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Отказ от ответственности</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__container">
+            <div class="footer__row">
+              <h3 class="indent-reset footer__title">
+                Безопасность
+              </h3>
+              <div class="footer__text">
+                <p>Наши партнёры по проведению платежей гарантируют безопасность ваших данных своей мировой репутацией.</p>
+              </div>
+            </div>
+
+            <div class="footer__row d-md-flex justify-content-between">
+              <div>
+                <div class="footer__payments">
+                  <img class="footer__mir" src="img/icon-mir.png" alt="MIR">
+                  <img class="footer__visa" src="img/icon-visa.png" alt="VISA">
+                  <img class="footer__mastercard" src="img/icon-mastercard.png" alt="MasterCard">
+                </div>
+
+                <a class="footer__politics" href="#">Политика хранения и обработки персональных данных</a>
+              </div>
+
+              <a class="logo logo--footer" href="/">
+                <img src="img/logo-footer.png" width="289" height="75" alt="Логотип PAY TOUR"></a>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/vendor-bundle.js"></script>
+  <script src="js/main.js" type="module"></script>
+</body>
+
+</html>

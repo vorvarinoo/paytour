@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="fonts/opensans-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style/vendor-bundle.css">
+  <link rel="stylesheet" href="style/main.css">
+  <title>VANVA (Ванва)</title>
+</head>
+
+<body class="indent-reset site">
+  <div aria-hidden="true" id="site-top"></div>
+  <div class="site__container">
+    <header class="site__header header-detailed">
+      <div class="header-bg"></div>
+      <div class="container">
+        <div class="header-detailed__content">
+          <nav class="header-detailed__menu">
+            <nav>
+              <ul class="list-reset header-detailed__list">
+                <li class="header-detailed__item">
+                  <a href="#hero-descr" class="header-detailed__link">ОБ ОТЕЛЕ</a>
+                </li>
+                <li class="header-detailed__item">
+                  <a href="#available-rooms" class="header-detailed__link">НОМЕРА</a>
+                </li>
+                <li class="header-detailed__item">
+                  <a href="#gallery" class="header-detailed__link">ГАЛЕРЕЯ</a>
+                </li>
+                <li class="header-detailed__item">
+                  <a href="#contacts" class="header-detailed__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </nav>
+
+          <a class="logo logo--detailed" href="/">
+            <img src="img/logo.png" alt="Logo" width="202" height="52">
+          </a>
+
+
+          <div class="header-detailed__right">
+            <div class="header-detailed__buttons">
+              <a class="header-detailed__link" href="#reviews">ОТЗЫВЫ</a>
+              <a class="header-detailed__link header-detailed__link--btn" href="page-detailed-booking-room.html">Забронировать</a>
+            </div>
+            <div class="burger">
+              <button class="btn-reset burger__btn" aria-label="Меню">
+                <svg width="28" height="18" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-burger"></use>
+                </svg>
+              </button>
+              <div id="dropdown" class="burger__dropdown d-block">
+                <div class="burger__dropdown-bg">
+                  <nav>
+                    <div class="burger__dropdown-links">
+                      <a href="#hero-descr">Об отеле</a>
+                      <a href="#available-rooms">Номера</a>
+                      <a href="#contacts">Контакты</a>
+                      <a href="#gallery">Галерея</a>
+                      <a href="#reviews">Отзывы</a>
+                      <a href="page-no-bookings-panel.html">Мои бронирования</a>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="site__content">
+      <main>
+        <div class="container">
+          <ul class="list-reset breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link">Гостиницы России</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="page-search.html" class="breadcrumbs__link">Гостиницы Омска</a>
+              <div class="breadcrumbs__date"><span>5 июн, ср - 16 июн, вс</span></div>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="page-detailed-hotel.html" class="breadcrumbs__link">VANVA (Ванва)</a>
+            </li>
+          </ul>
+        </div>
+        <section class="detailed-hero">
+          <div class="container">
+            <h1 class="title detailed-hero__title">VANVA (Ванва)</h1>
+            <div class="detailed-hero__content">
+              <div class="detailed-hero__top">
+                <img src="./img/img_detailed-hero.jpg" alt="Фото отеля">
+                <img src="./img/img_detailed-hero.jpg" alt="Фото отеля">
+                <img src="./img/img_detailed-hero.jpg" alt="Фото отеля">
+              </div>
+              <div class="detailed-hero__bottom">
+                <div class="detailed-hero__bottom-content">
+                  <div class="detailed-hero__bottom-img">
+                    <img src="./img/img_detailed-hero-small.png" alt="Фото номера">
+                    <img src="./img/img_detailed-hero-small.png" alt="Фото номера">
+                    <img src="./img/img_detailed-hero-small.png" alt="Фото номера">
+                  </div>
+                  <div class="detailed-hero__descr" id="hero-descr">
+                    <p>
+                      Новый комплекс апартаментов "VANVA" предлагает своим гостям
+                      14 номеров (апартаментов) разной категории.
+                    </p>
+                    <p>
+                      Отдельно стоящее здание, имеющее огороженную территорию с парковкой и видеонаблюдением. Отель расположен в районе с развитой инфраструктурой.
+                    </p>
+                  </div>
+                </div>
+                <div class="detailed-hero__buttons">
+                  <div class="detailed-hero__controls">
+                    <!-- If we need navigation buttons -->
+                    <div class="detailed-hero__button-prev">
+                      <svg width="7" height="12" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon_btn-controls-detailed-hero"></use>
+                      </svg>
+                    </div>
+                    <div class="detailed-hero__button-next">
+                      <svg width="7" height="12" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon_btn-controls-detailed-hero"></use>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <a class="btn-reset detailed-hero__btn" href="#">
+                    Посмотреть номера
+                    <div class="detailed-hero__btn-icon">
+                      <svg width="17" height="9" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-arrow-detailed-hero"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+
+        <section class="details">
+          <div class="container">
+            <div class="details__content">
+              <h2 class="title title--large details__title">Детали:</h2>
+              <div class="details__form">
+                <form action="" class="form details-form">
+                  <div class="form__inner details-form__content">
+                    <div class="form__field details-form__input-wrapper">
+                      <label for="check-in" class="form__label details-form__label">Заезд</label>
+                      <div class="details-form__input-icon details-form__input-icon--date">
+                        <input value="23.10.2023" type="text" class="form__input details-form__input" id="check-in">
+                      </div>
+
+                    </div>
+                    <div class="form__field details-form__input-wrapper">
+                      <label for="сheck-out" class="form__label details-form__label">Выезд</label>
+                      <div class="details-form__input-icon details-form__input-icon--date">
+                        <input value="23.10.2023" type="text" class="form__input details-form__input" id="сheck-out">
+                      </div>
+                    </div>
+                    <div class="form__field details-form__input-wrapper">
+                      <label for="сheck-out" class="form__label details-form__label">Количество гостей</label>
+                      <div class="details-form__input-icon details-form__input-icon--person">
+                        <input value="23.10.2023" type="text" class="form__input details-form__input" id="сheck-out">
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <button class="btn-reset details-form__btn">Забронировать</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="available-rooms" id="available-rooms">
+          <div class="container">
+            <h2 class="title title--large available-rooms__title">Доступные номера для&nbsp;бронирования:</h2>
+            <div class="available-rooms__content">
+              <article class="rooms-card">
+
+                <div class="rooms-card__top">
+                  <div class="rooms-card__img">
+                    <img src="./img/img-rooms-card.png">
+                  </div>
+                  <div class="rooms-card__info">
+                    <h3 class="rooms-card__title">
+                      Номер улучшенный семейный
+                    </h3>
+                    <ul class="list-reset rooms-features">
+                      <li class="rooms-features__item">
+                        <svg width="16" height="15" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-person"></use>
+                        </svg>
+                        2 взрослых
+                      </li>
+                      <li class="rooms-features__item rooms-features__item--small">
+                        <svg width="16" height="15" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-square"></use>
+                        </svg>
+                        80 м<sup>2</sup>
+                      </li>
+                    </ul>
+                    <ul class="list-reset rooms-features rooms-features--bg rooms-features--grid-row">
+                      <li class="rooms-features__item rooms-features__item--pay ">
+                        <svg width="16" height="15" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-wallet"></use>
+                        </svg>
+                        Оплата при заселении
+                      </li>
+                      <li class="rooms-features__item rooms-features__item--green">
+                        <svg width="16" height="15" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-food"></use>
+                        </svg>
+                        Питание включено
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="rooms-card__bottom">
+                  <div class="rooms-card__pay-info">
+                    <div class="rooms-card__price">
+                      <div class="rooms-card__price-left">
+                        <div class="rooms-card__price-old">
+                          <del>
+                            <span>92 632</span>
+                            <span>₽</span>
+                          </del>
+                        </div>
+
+                        <div class="rooms-card__price-new">
+                          <span>88 000</span>
+                          <span>₽</span>
+                        </div>
+                      </div>
+                      <div class="rooms-card__price-right">
+                        <span>За весь период</span>
+                        <span>Все налоги включены</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="rooms-card__buttons">
+                    <a href="/page-detailed-room.html" class="btn-reset rooms-card__btn">Подробнее</a>
+                    <a href="/page-detailed-booking-room.html" class="btn-reset rooms-card__btn rooms-card__btn--theme-blue">Забронировать</a>
+                  </div>
+                </div>
+              </article>
+              <ul class="list-reset available-rooms__list">
+                <li>
+                  <article class="rooms-card-small" style="background-image: url(../img/img-bg_rooms-card-small.png);">
+                    <div class="rooms-card-small__content">
+                      <div class="rooms-card-small__top">
+                        <span>осталось 2 места</span>
+                      </div>
+                      <div class="rooms-card-small__bottom">
+                        <a class="rooms-card-small__title" href="/page-detailed-room.html">Номер улучшенный семейный</a>
+                        <ul class="list-reset rooms-features mb-0">
+                          <li class="rooms-features__item ">
+                            <svg width="16" height="15" aria-hidden="true">
+                              <use xlink:href="img/sprite.svg#icon-white-person"></use>
+                            </svg>
+                            2 взрослых
+                          </li>
+                          <li class="rooms-features__item rooms-features__item--small">
+                            <svg width="16" height="15" aria-hidden="true">
+                              <use xlink:href="img/sprite.svg#icon-white-square"></use>
+                            </svg>
+                            80 м<sup>2</sup>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li>
+                  <article class="rooms-card-small" style="background-image: url(../img/img-bg_rooms-card-small-2.png);">
+                    <div class="rooms-card-small__content">
+                      <div class="rooms-card-small__top">
+                        <span>осталось 4 места</span>
+                      </div>
+                      <div class="rooms-card-small__bottom">
+                        <a class="rooms-card-small__title" href="/page-detailed-room.html">Номер улучшенный семейный</a>
+                        <ul class="list-reset rooms-features mb-0">
+                          <li class="rooms-features__item ">
+                            <svg width="16" height="15" aria-hidden="true">
+                              <use xlink:href="img/sprite.svg#icon-white-person"></use>
+                            </svg>
+                            2 взрослых
+                          </li>
+                          <li class="rooms-features__item rooms-features__item--small">
+                            <svg width="16" height="15" aria-hidden="true">
+                              <use xlink:href="img/sprite.svg#icon-white-square"></use>
+                            </svg>
+                            80 м<sup>2</sup>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="d-none d-md-block">
+                  <article class="rooms-card-small" style="background-image: url(../img/img-bg_rooms-card-small-3.png);">
+                    <div class="rooms-card-small__content">
+                      <div class="rooms-card-small__top">
+                        <span>осталось 1 место</span>
+                      </div>
+                      <div class="rooms-card-small__bottom">
+                        <a class="rooms-card-small__title" href="/page-detailed-room.html">Номер улучшенный семейный</a>
+                        <ul class="list-reset rooms-features mb-0">
+                          <li class="rooms-features__item ">
+                            <svg width="16" height="15" aria-hidden="true">
+                              <use xlink:href="img/sprite.svg#icon-white-person"></use>
+                            </svg>
+                            2 взрослых
+                          </li>
+                          <li class="rooms-features__item rooms-features__item--small">
+                            <svg width="16" height="15" aria-hidden="true">
+                              <use xlink:href="img/sprite.svg#icon-white-square"></use>
+                            </svg>
+                            80 м<sup>2</sup>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="d-none d-md-block">
+                  <article class="rooms-card-small" style="background-image: url(../img/img-bg_rooms-card-small-4.png);">
+                    <div class="rooms-card-small__content">
+                      <div class="rooms-card-small__top">
+                        <span>осталось 1 место</span>
+                      </div>
+                      <div class="rooms-card-small__bottom">
+                        <a class="rooms-card-small__title" href="/page-detailed-room.html">Номер улучшенный семейный</a>
+                        <ul class="list-reset rooms-features mb-0">
+                          <li class="rooms-features__item ">
+                            <svg width="16" height="15" aria-hidden="true">
+                              <use xlink:href="img/sprite.svg#icon-white-person"></use>
+                            </svg>
+                            2 взрослых
+                          </li>
+                          <li class="rooms-features__item rooms-features__item--small">
+                            <svg width="16" height="15" aria-hidden="true">
+                              <use xlink:href="img/sprite.svg#icon-white-square"></use>
+                            </svg>
+                            80 м<sup>2</sup>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="d-none d-md-block">
+                  <article class="rooms-card-small" style="background-image: url(../img/img-bg_rooms-card-small-5.png);">
+                    <div class="rooms-card-small__content">
+                      <div class="rooms-card-small__top">
+                        <span>осталось 3 места</span>
+                      </div>
+                      <div class="rooms-card-small__bottom">
+                        <a class="rooms-card-small__title" href="/page-detailed-room.html">Номер улучшенный семейный</a>
+                        <ul class="list-reset rooms-features mb-0">
+                          <li class="rooms-features__item ">
+                            <svg width="16" height="15" aria-hidden="true">
+                              <use xlink:href="img/sprite.svg#icon-white-person"></use>
+                            </svg>
+                            2 взрослых
+                          </li>
+                          <li class="rooms-features__item rooms-features__item--small">
+                            <svg width="16" height="15" aria-hidden="true">
+                              <use xlink:href="img/sprite.svg#icon-white-square"></use>
+                            </svg>
+                            80 м<sup>2</sup>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="d-none d-md-block">
+                  <article class="rooms-card-small" style="background-image: url(../img/img-bg_rooms-card-small-6.png);">
+                    <div class="rooms-card-small__content">
+                      <div class="rooms-card-small__top">
+                        <span>осталось 1 место</span>
+                      </div>
+                      <div class="rooms-card-small__bottom">
+                        <a class="rooms-card-small__title" href="/page-detailed-room.html">Номер улучшенный семейный</a>
+                        <ul class="list-reset rooms-features mb-0">
+                          <li class="rooms-features__item ">
+                            <svg width="16" height="15" aria-hidden="true">
+                              <use xlink:href="img/sprite.svg#icon-white-person"></use>
+                            </svg>
+                            2 взрослых
+                          </li>
+                          <li class="rooms-features__item rooms-features__item--small">
+                            <svg width="16" height="15" aria-hidden="true">
+                              <use xlink:href="img/sprite.svg#icon-white-square"></use>
+                            </svg>
+                            80 м<sup>2</sup>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </div>
+            <div class="available-rooms__buttons">
+              <a class="available-rooms__btn" href="#">
+                Посмотреть еще
+                <svg width="39" height="8" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#reviews-arrow"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="detailed-benefits">
+          <div class="container">
+            <h2 class="title title--large title--case">
+              Все удобства
+            </h2>
+            <div class="detailed-benefits__content">
+              <ul class="list-reset detailed-benefits__list">
+
+                <li class="detailed-benefits__item">
+                  <div class="detailed-benefits__item-top">
+                    <img src="./img/icon_hotel.svg" aria-hidden="true" width="39" height="39">
+                    <h3 class="detailed-benefits__subtitle">
+                      Общие услуги отеля
+                    </h3>
+                  </div>
+
+                  <ul class="list-reset detailed-benefits__benefit-list">
+                    <li class="detailed-benefits__benefit-item">
+                      Обслуживание в номере
+                    </li>
+                    <li class="detailed-benefits__benefit-item">
+                      Парковка
+                    </li>
+                    <li class="detailed-benefits__benefit-item">
+                      Камера хранения/комната для багажа
+                    </li>
+                    <li class="detailed-benefits__benefit-item">
+                      Регистрация иностранных граждан
+                    </li>
+                  </ul>
+                </li>
+                <li class="detailed-benefits__item">
+                  <div class="detailed-benefits__item-top">
+                    <img src="./img/icon_internet.svg" aria-hidden="true" width="39" height="39">
+                    <h3 class="detailed-benefits__subtitle">
+                      Интернет и ТВ
+                    </h3>
+                  </div>
+
+                  <ul class="list-reset detailed-benefits__benefit-list">
+                    <li class="detailed-benefits__benefit-item">
+                      Wi-Fi в номерах
+
+                    </li>
+                    <li class="detailed-benefits__benefit-item">
+                      Wi-Fi в отеле
+                    </li>
+                  </ul>
+                </li>
+                <li class="detailed-benefits__item detailed-benefits__item--order">
+                  <div class="detailed-benefits__item-top">
+                    <img src="./img/icon_business-center.svg" aria-hidden="true" width="39" height="39">
+                    <h3 class="detailed-benefits__subtitle">
+                      Услуги бизнес-центра
+                    </h3>
+                  </div>
+
+                  <ul class="list-reset detailed-benefits__benefit-list">
+                    <li class="detailed-benefits__benefit-item">
+                      Факс/ксерокопирование
+                    </li>
+                  </ul>
+                </li>
+                <li class="detailed-benefits__item">
+                  <div class="detailed-benefits__item-top">
+                    <img src="./img/icon_security.svg" aria-hidden="true" width="39" height="39">
+                    <h3 class="detailed-benefits__subtitle">
+                      Безопасность
+                    </h3>
+                  </div>
+
+                  <ul class="list-reset detailed-benefits__benefit-list">
+                    <li class="detailed-benefits__benefit-item">
+                      Датчик дыма
+                    </li>
+                    <li class="detailed-benefits__benefit-item">
+                      Аптечка первой помощи
+                    </li>
+                    <li class="detailed-benefits__benefit-item">
+                      Видеонаблюдение в подъезде
+                    </li>
+                    <li class="detailed-benefits__benefit-item">
+                      Огнетушитель
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <div class="detailed-benefits__img">
+                <img src="./img/img_detailed-benefits.png">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="detailed-gallery" id="gallery">
+          <div class="container">
+            <h2 class="title title--large detailed-gallery__title">Галерея</h2>
+            <ul class="list-reset detailed-gallery__list">
+              <li class="detailed-gallery__item">
+                <img src="./img/img_detailed-gallery-1.png">
+              </li>
+              <li class="detailed-gallery__item detailed-gallery__item--hidden">
+                <img src="./img/img_detailed-gallery-3.png">
+              </li>
+              <li class="detailed-gallery__item">
+                <img src="./img/img_detailed-gallery-2.png">
+              </li>
+              <li class="detailed-gallery__item">
+                <img src="./img/img_detailed-gallery-4.png">
+              </li>
+              <li class="detailed-gallery__item">
+                <img src="./img/img_detailed-gallery-5.png">
+              </li>
+              <li class="detailed-gallery__item detailed-gallery__item--hidden">
+                <img src="./img/img_detailed-gallery-6.png">
+              </li>
+              <li class="detailed-gallery__item detailed-gallery__item">
+                <button class="btn-reset detailed-gallery__btn">Смотреть все
+                  <svg width="5" height="8" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-arrow-small"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="reviews" id="reviews">
+          <div class="container">
+
+            <div class="reviews__content">
+              <h2 class="title title--large reviews__title">Отзывы</h2>
+              <div class="reviews__block">
+                <div class="reviews__item">
+                  <div class="reviews__top">
+                    <div class="reviews__profile-picture"></div>
+                    <div class="reviews__info">
+                      <div class="reviews__full-name">ФИО</div>
+                      <div class="reviews__geo-data">Гео+город</div>
+                    </div>
+                  </div>
+                  <div class="reviews__center">
+                    <div class="reviews__stars-rating" title="Рейтинг 0">
+                      <span class="reviews__item-star" style="--star-rating: 0;" aria-label="Рейтинг 0">
+                      </span>
+                    </div>
+                    <div class="reviews__date">12 февраля</div>
+                  </div>
+                  <div class="reviews__bottom">
+                    <p>
+                      Описание
+                    </p>
+                  </div>
+                </div>
+                <div class="reviews__item">
+                  <div class="reviews__top">
+                    <div class="reviews__profile-picture"></div>
+                    <div class="reviews__info">
+                      <div class="reviews__full-name">ФИО</div>
+                      <div class="reviews__geo-data">Гео+город</div>
+                    </div>
+                  </div>
+                  <div class="reviews__center">
+                    <div class="reviews__stars-rating" title="Рейтинг 1">
+                      <span class="reviews__item-star" style="--star-rating: 1;" aria-label="Рейтинг 1">
+                      </span>
+                    </div>
+                    <div class="reviews__date">12 февраля</div>
+                  </div>
+                  <div class="reviews__bottom">
+                    <p>
+                      Описание
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews__btn">
+                <a class="link-more" href="#">
+                  Увидеть больше
+                  <svg width="39" height="8" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#reviews-arrow"></use>
+                  </svg>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+        <section class="contacts" id="contacts">
+          <div class="container">
+            <div class="contacts__content">
+              <div class="contacts__info">
+                <h2 class="contacts__title">Контакты</h2>
+                <ul class="list-reset contacts__list">
+                  <li class="contacts__item">
+                    <div class="contact">
+                      <div class="contact__icon">
+                        <svg class="contact__icon-location" width="21" height="27" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-location"></use>
+                        </svg>
+                      </div>
+                      <div class="contact__content">
+                        <div class="contact__title">Адрес</div>
+                        <div class="contact__data">г. Калининград, ул. Верещагина, дом 5</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="contacts__item">
+                    <div class="contact">
+                      <div class="contact__icon">
+                        <svg class="contact__icon-phone" width="25" height="30" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-phone"></use>
+                        </svg>
+                      </div>
+                      <div class="contact__content">
+                        <div class="contact__title">Телефон</div>
+                        <a class="contact__data" href="#">8 (401) 247-03-08</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="contacts__item">
+                    <div class="contact">
+                      <div class="contact__icon ">
+                        <svg class="contact__icon-mail" width="33" height="23" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-mail"></use>
+                        </svg>
+                      </div>
+                      <div class="contact__content">
+                        <div class="contact__title">E-mail</div>
+                        <a class="contact__data" href="#">hotelssales@yandex.ru</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="contacts__maps">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="detailed-form">
+          <div class="container">
+            <div class="detailed-form__content">
+              <h2 class="detailed-form__title">
+                Остались вопросы?
+              </h2>
+              <div class="detailed-form__descr">
+                Заполните форму ниже
+              </div>
+
+              <form class="form form__inner questions-form" action="">
+                <input class="questions-form__input questions-form__input--width" type="text" placeholder="Ваше ФИО">
+                <input class="questions-form__input questions-form__input--width" type="text" placeholder="Номер телефона">
+                <input class="questions-form__input questions-form__input--width" type="text" placeholder="Электронная почта">
+                <button class="btn-reset questions-form__btn questions-form__btn--width">
+                  Отправить
+                </button>
+
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <span class="checkbox__box"></span>
+                  Нажимая кнопку отправить, вы соглашаетесь с Политикой Конфиденциальности
+                </label>
+              </form>
+            </div>
+          </div>
+        </section>
+
+      </main>
+    </div>
+    <footer class="site__footer footer">
+      <div class="footer__top">
+        <div class="container">
+          <div class="footer__container">
+            <div class="footer__content">
+              <div>
+                <h3 class="indent-reset footer__title">
+                  Клиентам
+                </h3>
+                <ul class="list-reset footer__list">
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">База знаний</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Служба поддержки</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Блог о путешествиях</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Популярные направления</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Юридическая информация</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Программа лояльности</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="indent-reset footer__title">
+                  Партнёрам
+                </h3>
+                <ul class="list-reset footer__list">
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Объектам развещения</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Турагенствам</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Корпоративным клиентам</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Рекламодателям</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Реклама и PR</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="indent-reset footer__title">
+                  Документы
+                </h3>
+                <ul class="list-reset footer__list">
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Правила условий бронирования</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Отказ от ответственности</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__container">
+            <div class="footer__row">
+              <h3 class="indent-reset footer__title">
+                Безопасность
+              </h3>
+              <div class="footer__text">
+                <p>Наши партнёры по проведению платежей гарантируют безопасность ваших данных своей мировой репутацией.</p>
+              </div>
+            </div>
+
+            <div class="footer__row d-md-flex justify-content-between">
+              <div>
+                <div class="footer__payments">
+                  <img class="footer__mir" src="img/icon-mir.png" alt="MIR">
+                  <img class="footer__visa" src="img/icon-visa.png" alt="VISA">
+                  <img class="footer__mastercard" src="img/icon-mastercard.png" alt="MasterCard">
+                </div>
+
+                <a class="footer__politics" href="#">Политика хранения и обработки персональных данных</a>
+              </div>
+
+              <a class="logo logo--footer" href="/">
+                <img src="img/logo-footer.png" width="289" height="75" alt="Логотип PAY TOUR"></a>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/vendor-bundle.js"></script>
+  <script src="js/main.js" type="module"></script>
+</body>
+
+</html>

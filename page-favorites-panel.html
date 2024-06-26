@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="fonts/opensans-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style/vendor-bundle.css">
+  <link rel="stylesheet" href="style/main.css">
+  <title>Личный кабинет Избранное</title>
+</head>
+
+<body class="indent-reset site">
+  <div aria-hidden="true" id="site-top"></div>
+  <div class="site__container">
+    <header class="site__header header header--absolute-bg-color header-auth-user">
+      <div class="header-bg"></div>
+      <div class="container">
+        <div class="header-top">
+          <div class="header__left">
+            <a href="/" class="logo">
+              <img src="img/logo.png" width="202" height="52" alt="Логотип PAY TOUR">
+            </a>
+          </div>
+          <div class="header__right">
+            <a class="header__question" href="#">
+              <img src="img/icon-question.svg" aria-hidden="true" width="26" height="26">ЗАДАТЬ ВОПРОС</a>
+            <a class="header__notify" href="#">
+              <img src="img/icon-notify.svg" aria-hidden="true" width="22" height="25">
+            </a>
+            <a class="header__chosen" href="page-no-favorites-panel.html">
+              <img src="img/icon-chosen.svg" aria-hidden="true" width="25" height="25">
+            </a>
+            <a class="header__login header-auth-user__logout" href="page-login.html">ВЫЙТИ</a>
+            <div class="header-auth-user__user-icon" href="page-login.html">
+              <img src="img/user-icon.jpg" alt="Фото пользователя">
+            </div>
+          </div>
+          <div class="burger">
+            <button class="btn-reset burger__btn" aria-label="Меню">
+              <svg width="28" height="18" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-burger"></use>
+              </svg>
+            </button>
+            <div id="dropdown" class="burger__dropdown d-block">
+              <div class="burger__dropdown-bg">
+                <nav>
+                  <div class="burger__dropdown-links">
+                    <a href="page-no-bookings-panel.html">Личный кабинет</a>
+                    <a href="#travel-blog">Блог о путешествиях</a>
+                    <a href="#main-info">Преимущества TourPay</a>
+                    <a href="#">Чат с поддержкой</a>
+                    <a href="page-no-favorites-panel.html">Мои избранные отели</a>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </header>
+
+    <div class="site__content">
+
+      <main>
+        <div class="container">
+          <div class="row">
+            <aside class="sidebar-panel sidebar-panel--padding d-none d-lg-block col-lg-5 col-xl-4">
+              <div class="sidebar-panel__inner">
+                <div class="sidebar-panel__inner-top">
+                  <div class="sidebar-panel__name-user">Имя пользователя</div>
+                  <div class="sidebar-panel__buttons">
+                    <a href="/page-settings-individual-panel.html">
+                      <svg width="24" height="24" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-settings"></use>
+                      </svg>
+                    </a>
+                    <a href="/page-login.html">
+                      <svg width="23" height="26" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-logout"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <ul class="list-reset sidebar-panel__list">
+                  <li class="sidebar-panel__item">
+                    <a class="sidebar-panel__link" href="#">
+                      Мои бронирования
+                    </a>
+                  </li>
+                  <li class="sidebar-panel__item">
+                    <a class="sidebar-panel__link" href="page-favorites-panel.html" data-value="1">
+                      Избранное
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </aside>
+            <section class="panel favorites col-lg-7 col-xl-8">
+
+
+              <h1 class="title title--large title--case panel__title favorites__title panel panel--spacing">ИЗБРАННОЕ</h1>
+
+              <div class="panel panel--spacing-left">
+                <div class="panel__content panel__content--width-max">
+                  <div class="tabs panel__tabs">
+                    <div class="favorites">
+                      <div class="tabs__buttons">
+                        <button class="btn-reset tabs__btn is-selected">Избранное</button>
+                        <button class="btn-reset tabs__btn">Сохраненные поиски</button>
+                      </div>
+                    </div>
+                    <div>
+                      <ul class="list-reset favorites__btn-list">
+                        <li>
+                          <button class="btn-reset favorites__btn is-selected">Отели</button>
+                        </li>
+                        <li>
+                          <button class="btn-reset favorites__btn">Квартиры</button>
+                        </li>
+                        <li>
+                          <button class="btn-reset favorites__btn">Туры</button>
+                        </li>
+                        <li>
+                          <button class="btn-reset favorites__btn">Ж/Д</button>
+                        </li>
+                        <li>
+                          <button class="btn-reset favorites__btn">Авиа</button>
+                        </li>
+                      </ul>
+                      <div>
+
+                        <ul class="list-reset panel__list favorites__list">
+                          <li class="panel__item">
+                            <article class="card favorites__card" data-rating="8,7">
+                              <div class="card__inner">
+                                <div class="card__content-top">
+                                  <img src="img/card-img-hotel.jpg" alt="Фото отеля">
+                                </div>
+                                <div class="card__content-bottom">
+
+                                  <div class="card__stars-rating" title="Рейтинг 4">
+                                    <span class="card__item-star" style="--star-rating: 4;" aria-label="Рейтинг 4">
+                                    </span>
+                                  </div>
+                                  <h3 class="indent-reset card__title">Отель 50|60 Омск</h3>
+                                  <div class="card__address">улица Щербанёва, 20, Омск</div>
+
+
+                                  <ul class="list-reset card__list">
+                                    <li class="card__item">
+                                      <svg width="12" height="12" aria-hidden="true">
+                                        <use xlink:href="img/sprite.svg#icon-date"></use>
+                                      </svg>
+                                      16.03.2024 - 18.03.2024
+                                    </li>
+                                    <li class="card__item">
+                                      <svg width="12" height="12" aria-hidden="true">
+                                        <use xlink:href="img/sprite.svg#icon-person"></use>
+                                      </svg>
+                                      2 взрослых
+                                    </li>
+                                    <li class="card__item">
+                                      <svg width="12" height="12" aria-hidden="true">
+                                        <use xlink:href="img/sprite.svg#icon-food"></use>
+                                      </svg>
+                                      Питание не включено
+                                    </li>
+                                  </ul>
+
+
+                                  <div class="card__cost">
+                                    Cтоимость номера 3 × 5600 ₽
+                                  </div>
+                                  <div class="card__note-person">
+                                    для 2 взрослых на 1 ночь
+                                  </div>
+
+                                  <div class="card__payment">
+                                    <div class="card__payment-info">
+                                      <span>Оплата сейчас в валюте:</span>
+                                      <span>Российский рубль</span>
+                                    </div>
+                                    <div class="card__payment-sum">
+                                      11 200 ₽
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </article>
+                            <div class="panel__wrap-btn panel__wrap-btn--grid">
+                              <button class="btn-reset panel__btn panel__btn--right">Скопировать</button>
+                            </div>
+                          </li>
+                        </ul>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </section>
+          </div>
+        </div>
+
+      </main>
+
+
+    </div>
+    <footer class="site__footer footer">
+      <div class="footer__top">
+        <div class="container">
+          <div class="footer__container">
+            <div class="footer__content">
+              <div>
+                <h3 class="indent-reset footer__title">
+                  Клиентам
+                </h3>
+                <ul class="list-reset footer__list">
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">База знаний</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Служба поддержки</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Блог о путешествиях</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Популярные направления</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Юридическая информация</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Программа лояльности</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="indent-reset footer__title">
+                  Партнёрам
+                </h3>
+                <ul class="list-reset footer__list">
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Объектам развещения</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Турагенствам</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Корпоративным клиентам</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Рекламодателям</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Реклама и PR</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="indent-reset footer__title">
+                  Документы
+                </h3>
+                <ul class="list-reset footer__list">
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Правила условий бронирования</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Отказ от ответственности</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__container">
+            <div class="footer__row">
+              <h3 class="indent-reset footer__title">
+                Безопасность
+              </h3>
+              <div class="footer__text">
+                <p>Наши партнёры по проведению платежей гарантируют безопасность ваших данных своей мировой репутацией.</p>
+              </div>
+            </div>
+
+            <div class="footer__row d-md-flex justify-content-between">
+              <div>
+                <div class="footer__payments">
+                  <img class="footer__mir" src="img/icon-mir.png" alt="MIR">
+                  <img class="footer__visa" src="img/icon-visa.png" alt="VISA">
+                  <img class="footer__mastercard" src="img/icon-mastercard.png" alt="MasterCard">
+                </div>
+
+                <a class="footer__politics" href="#">Политика хранения и обработки персональных данных</a>
+              </div>
+
+              <a class="logo logo--footer" href="/">
+                <img src="img/logo-footer.png" width="289" height="75" alt="Логотип PAY TOUR"></a>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/vendor-bundle.js"></script>
+  <script src="js/main.js" type="module"></script>
+</body>
+
+</html>

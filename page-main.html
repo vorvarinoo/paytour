@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="fonts/opensans-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style/vendor-bundle.css">
+  <link rel="stylesheet" href="style/main.css">
+  <title>Главная</title>
+</head>
+
+<body class="indent-reset site">
+  <div aria-hidden="true" id="site-top"></div>
+  <div class="site__container">
+    <header class="site__header header">
+      <div class="container">
+        <div class="header-top">
+          <div class="header__left">
+            <a href="/" class="logo">
+              <img src="img/logo.png" width="202" height="52" alt="Логотип PAY TOUR">
+            </a>
+          </div>
+          <div class="header__right">
+            <a class="header__question" href="#">
+              <img src="img/icon-question.svg" aria-hidden="true" width="26" height="26">ЗАДАТЬ ВОПРОС</a>
+            <a class="header__notify" href="#">
+              <img src="img/icon-notify.svg" aria-hidden="true" width="22" height="25">
+            </a>
+            <a class="header__chosen" href="page-no-favorites-panel.html">
+              <img src="img/icon-chosen.svg" aria-hidden="true" width="25" height="25">
+            </a>
+            <a class="header__login" href="page-login.html">ВОЙТИ</a>
+
+          </div>
+          <div class="burger">
+            <button class="btn-reset burger__btn" aria-label="Меню">
+              <svg width="28" height="18" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-burger"></use>
+              </svg>
+            </button>
+            <div id="dropdown" class="burger__dropdown d-block">
+              <div class="burger__dropdown-bg">
+                <nav>
+                  <div class="burger__dropdown-links">
+                    <a href="page-no-bookings-panel.html">Личный кабинет</a>
+                    <a href="#travel-blog">Блог о путешествиях</a>
+                    <a href="#main-info">Преимущества TourPay</a>
+                    <a href="#">Чат с поддержкой</a>
+                    <a href="page-no-favorites-panel.html">Мои избранные отели</a>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </header>
+    <div class="site__content">
+      <main>
+        <section class="first-screen header-bg">
+
+          <div class="main-hero">
+            <div class="main-hero__content first-screen__block">
+              <h1 class="main-hero__title first-screen__title">Поиск отелей, хостелов и апартаментов</h1>
+              <a href="#" class="main-hero__btn first-screen__btn">Подобрать вариат</a>
+            </div>
+            <div class="main-hero__background-img">
+              <img src="img/bg_first-screen-slide-1.jpg">
+              <img src="img/bg_first-screen-slide-2.jpg">
+              <img src="img/bg_first-screen-slide-3.jpg">
+              <div class="main-hero__background-color"></div>
+            </div>
+          </div>
+          <div class="container">
+            <form class="search-form" action="">
+              <div class="search-form__wrapper">
+                <div class="search-form__input-wrapper search-form__input-wrapper--location">
+                  <label for="location" class="search-form__label">Направление</label>
+                  <div class="search-form__input-item">
+                    <input value="Город, отель или аэропот" type="text" class="search-form__input" id="location">
+                  </div>
+                </div>
+                <div class="search-form__input-wrapper search-form__input-wrapper--date search-form__input-wrapper--arrival">
+                  <label for="location" class="search-form__label">Заезд</label>
+                  <div class="search-form__input-item search-form__input-item--date">
+                    <input value="23.10.2023" type="text" class="search-form__input" id="location">
+                  </div>
+                </div>
+                <div class="search-form__input-wrapper search-form__input-wrapper--date search-form__input-wrapper--departure">
+                  <label for="location" class="search-form__label">Выезд</label>
+                  <div class="search-form__input-item search-form__input-item--date">
+                    <input value="23.10.2023" type="text" class="search-form__input" id="location">
+                  </div>
+                </div>
+                <div class="search-form__input-wrapper search-form__input-wrapper--person">
+                  <label for="location" class="search-form__label">Количество гостей</label>
+                  <div class="search-form__input-item search-form__input-item--person">
+                    <input value="2 взрослых, 0 детей" type="text" class="search-form__input search-form__input--person" id="location">
+                  </div>
+                </div>
+              </div>
+              <div class="search-form__radio-wrapper">
+                <label class="search-form__radio-label">
+                  <input class="search-form__radio-btn" type="radio" name="user_age">
+                  <span class="search-form__custom-radio-btn"></span>
+                  Отдых</label>
+                <label class="search-form__radio-label">
+                  <input class="search-form__radio-btn" type="radio" name="user_age">
+                  <span class="search-form__custom-radio-btn"></span>
+                  Работа</label>
+                <label class="search-form__radio-label">
+                  <input class="search-form__radio-btn" type="radio" name="user_age">
+                  <span class="search-form__custom-radio-btn"></span>
+                  Санаторий
+                </label>
+              </div>
+              <button class="btn-reset search-form__btn">Забронировать</button>
+            </form>
+          </div>
+        </section>
+        <section class="main-info site__section" id="main-info">
+          <div class="container">
+            <div class="main-info__wrapper">
+              <div class="main-info__item info-cooperate">
+                <div class="main-info__img info-cooperate__img">
+                  <img src="img/main-info-img-1.png" alt="">
+                </div>
+                <div class="main-info__desc info-cooperate__desc">
+                  <h3 class="main-info__title info-cooperate__title">С нами сотрудничают</h3>
+                  <div class="main-info__text info-cooperate__text">самые известные отели по всей России</div>
+                  <a href="" class="main-info__btn info-cooperate__btn">Подобрать вариант</a>
+                </div>
+              </div>
+              <div class="main-info__item info-advantages">
+                <a href="" class="main-info__btn info-advantages__btn">Лучшие отели</a>
+                <div class="main-info__desc info-advantages__desc">
+                  <h3 class="main-info__title info-advantages__title">Удобное<br>
+                    бронирование</h3>
+                  <h3 class="main-info__title info-advantages__title">Моментальное<br>
+                    подтверждение</h3>
+                  <h3 class="main-info__title info-advantages__title">Гарантия лучшей цены</h3>
+                </div>
+              </div>
+              <div class="main-info__item info-payment">
+                <div class="main-info__img">
+                  <img src="img/main-info-img-2.jpg" alt="">
+                </div>
+                <div class="main-info__desc info-payment__desc">
+                  <h3 class="main-info__title info-payment__title">Отели с оплатой<br>
+                    на месте</h3>
+                  <div class="main-info__text info-payment__text mr-3">комфортные варианты
+                    под любой ваш бюджет</div>
+                  <a href="" class="info-payment__btn">
+                    <svg class="class" width="10" height="11" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#info-payment-arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="trend-direction site__section">
+          <div class="container">
+            <div class="trend-direction__top">
+              <h2 class="title title--small title--blue title--blue title-case">ПОПУЛЯРНЫЕ НАПРАВЛЕНИЯ</h2>
+              <a class="link-more trend-direction__link" href="#">
+                Увидеть больше
+                <svg width="39" height="8" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#reviews-arrow"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="row trend-direction__bottom">
+
+              <div class="trend-card col-6 col-lg-4">
+                <div class="trend-card__content">
+                  <div class="trend-card__top active"></div>
+                </div>
+                <div class="trend-card__descr">Описание</div>
+              </div>
+
+              <div class="trend-card col-6 col-lg-4">
+                <div class="trend-card__content">
+                  <div class="trend-card__top"></div>
+                </div>
+                <div class="trend-card__descr">Описание</div>
+              </div>
+
+              <div class="trend-card col-6 col-lg-4 d-none d-lg-block">
+                <div class="trend-card__content">
+                  <div class="trend-card__top"></div>
+                </div>
+                <div class="trend-card__descr">Описание</div>
+              </div>
+
+            </div>
+            <div class="trend-direction__buttons">
+              <a class="link-more" href="#">
+                Увидеть больше
+                <svg width="39" height="8" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#reviews-arrow"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </section>
+        <section class="travel-blog site__section" id="travel-blog">
+          <div class="container">
+            <h2 class="title title--small title--blue title--case travel-blog__title">БЛОГ О ПУТЕШЕСТВИЯХ</h2>
+
+            <div class="travel-blog__content ">
+              <div class="travel-blog__images travel-blog__images--big d-none d-md-block">
+                <div class="travel-blog__text d-md-none d-lg-flex">
+                  <h3 class="travel-blog__subtitle">
+                    Что посмотреть в&nbsp;Калмыкии:
+                  </h3>
+                  <p class="indent-reset">тюльпаны, пагоды и розовые озёра</p>
+                </div>
+                <img src="img/travel-blog-slide-1.jpg">
+                <img src="img/travel-blog-slide-1.jpg">
+                <img src="img/travel-blog-slide-1.jpg">
+                <div class="travel-blog__images-bg"></div>
+                <div class="travel-blog__navigation d-md-none d-lg-flex">
+                  <button class="btn-reset travel-blog__btn-prev">
+                    <svg class="class" width="7" height="12" aria-hidden="
+                       true">
+                      <use xlink:href="img/sprite.svg#icon-arrow-travel-blog"></use>
+                    </svg>
+                  </button>
+                  <button class="btn-reset travel-blog__btn-next">
+                    <svg class="class" width="7" height="12" aria-hidden="
+                       true">
+                      <use xlink:href="img/sprite.svg#icon-arrow-travel-blog"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="travel-blog__info">
+                <ul class="list-reset travel-blog__list">
+                  <li>
+                    <button class="btn-reset travel-blog__item is-selected">Куда поехать?</button>
+                  </li>
+                  <li>
+                    <button class="btn-reset travel-blog__item">Где остановиться?</button>
+                  </li>
+                  <li>
+                    <button class="btn-reset travel-blog__item">Как путешествовать?</button>
+                  </li>
+                  <li>
+                    <button class="btn-reset travel-blog__item">Почему Tour Pay?</button>
+                  </li>
+                </ul>
+
+                <h3 class="travel-blog__subtitle d-none d-md-block">
+                  Что посмотреть в&nbsp;Калмыкии:
+                </h3>
+                <div class="travel-blog__images d-md-none">
+                  <div class="travel-blog__text">
+                    <h3 class="travel-blog__subtitle">
+                      Что посмотреть в&nbsp;Калмыкии:
+                    </h3>
+                    <p class="indent-reset">тюльпаны, пагоды и розовые озёра</p>
+                  </div>
+                  <img src="img/travel-blog-slide-1.jpg">
+                  <img src="img/travel-blog-slide-1.jpg">
+                  <img src="img/travel-blog-slide-1.jpg">
+                  <div class="travel-blog__images-bg"></div>
+                  <div class="travel-blog__navigation">
+                    <button class="btn-reset travel-blog__btn-prev">
+                      <svg class="class" width="7" height="12" aria-hidden="
+                       true">
+                        <use xlink:href="img/sprite.svg#icon-arrow-travel-blog"></use>
+                      </svg>
+                    </button>
+                    <button class="btn-reset travel-blog__btn-next">
+                      <svg class="class" width="7" height="12" aria-hidden="
+                       true">
+                        <use xlink:href="img/sprite.svg#icon-arrow-travel-blog"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="travel-blog__descr">
+                  <p>
+                    Калмыкия&nbsp;&mdash; край бескрайних степей и&nbsp;тюльпанов
+                    до&nbsp;горизонта, буддизма и&nbsp;лотосов, ярких мандал и&nbsp;розовых озёр. Нарядные пагоды, пустыня, верблюды
+                    и&nbsp;молитвенные барабаны здесь столь&nbsp;же привычные,
+                    как для нас&nbsp;&mdash; сетевые супермаркеты на&nbsp;каждом углу мегаполиса.
+                  </p>
+                </div>
+                <div class="travel-blog__wrap-btn">
+                  <div class="travel-blog__navigation d-none d-md-flex d-lg-none">
+                    <button class="btn-reset travel-blog__btn-prev">
+                      <svg class="class" width="7" height="12" aria-hidden="
+                       true">
+                        <use xlink:href="img/sprite.svg#icon-arrow-travel-blog"></use>
+                      </svg>
+                    </button>
+                    <button class="btn-reset travel-blog__btn-next">
+                      <svg class="class" width="7" height="12" aria-hidden="
+                       true">
+                        <use xlink:href="img/sprite.svg#icon-arrow-travel-blog"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <a class="travel-blog__btn" href="">Подробнее
+                    <div class="travel-blog__btn-icon">
+                      <svg class="class" width="16" height="15" aria-hidden="
+                       true">
+                        <use xlink:href="img/sprite.svg#info-payment-arrow"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <script>
+
+          </script>
+        </section>
+        <section class="reviews reviews--text-color">
+          <div class="container">
+
+            <div class="reviews__content">
+              <h2 class="title title--small title--blue title--case reviews__title">ПОЛЬЗОВАТЕЛИ О Tour Pay</h2>
+              <div class="reviews__block">
+                <div class="reviews__item">
+                  <div class="reviews__top">
+                    <div class="reviews__profile-picture"></div>
+                    <div class="reviews__info">
+                      <div class="reviews__full-name">ФИО</div>
+                      <div class="reviews__geo-data">Гео+город</div>
+                    </div>
+                  </div>
+                  <div class="reviews__center">
+                    <div class="reviews__stars-rating" title="Рейтинг 0">
+                      <span class="reviews__item-star" style="--star-rating: 0;" aria-label="Рейтинг 0">
+                      </span>
+                    </div>
+                    <div class="reviews__date">12 февраля</div>
+                  </div>
+                  <div class="reviews__bottom">
+                    <p>
+                      Описание
+                    </p>
+                  </div>
+                </div>
+                <div class="reviews__item">
+                  <div class="reviews__top">
+                    <div class="reviews__profile-picture"></div>
+                    <div class="reviews__info">
+                      <div class="reviews__full-name">ФИО</div>
+                      <div class="reviews__geo-data">Гео+город</div>
+                    </div>
+                  </div>
+                  <div class="reviews__center">
+                    <div class="reviews__stars-rating" title="Рейтинг 1">
+                      <span class="reviews__item-star" style="--star-rating: 1;" aria-label="Рейтинг 1">
+                      </span>
+                    </div>
+                    <div class="reviews__date">12 февраля</div>
+                  </div>
+                  <div class="reviews__bottom">
+                    <p>
+                      Описание
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews__btn">
+                <a class="link-more" href="#">
+                  Увидеть больше
+                  <svg width="39" height="8" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#reviews-arrow"></use>
+                  </svg>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="site__footer footer">
+      <div class="footer__top">
+        <div class="container">
+          <div class="footer__container">
+            <div class="footer__content">
+              <div>
+                <h3 class="indent-reset footer__title">
+                  Клиентам
+                </h3>
+                <ul class="list-reset footer__list">
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">База знаний</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Служба поддержки</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Блог о путешествиях</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Популярные направления</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Юридическая информация</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Программа лояльности</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="indent-reset footer__title">
+                  Партнёрам
+                </h3>
+                <ul class="list-reset footer__list">
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Объектам развещения</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Турагенствам</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Корпоративным клиентам</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Рекламодателям</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Реклама и PR</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="indent-reset footer__title">
+                  Документы
+                </h3>
+                <ul class="list-reset footer__list">
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Правила условий бронирования</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Отказ от ответственности</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__container">
+            <div class="footer__row">
+              <h3 class="indent-reset footer__title">
+                Безопасность
+              </h3>
+              <div class="footer__text">
+                <p>Наши партнёры по проведению платежей гарантируют безопасность ваших данных своей мировой репутацией.</p>
+              </div>
+            </div>
+
+            <div class="footer__row d-md-flex justify-content-between">
+              <div>
+                <div class="footer__payments">
+                  <img class="footer__mir" src="img/icon-mir.png" alt="MIR">
+                  <img class="footer__visa" src="img/icon-visa.png" alt="VISA">
+                  <img class="footer__mastercard" src="img/icon-mastercard.png" alt="MasterCard">
+                </div>
+
+                <a class="footer__politics" href="#">Политика хранения и обработки персональных данных</a>
+              </div>
+
+              <a class="logo logo--footer" href="/">
+                <img src="img/logo-footer.png" width="289" height="75" alt="Логотип PAY TOUR"></a>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/vendor-bundle.js"></script>
+  <script src="js/main.js" type="module"></script>
+</body>
+
+</html>
