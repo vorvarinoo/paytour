@@ -1,0 +1,139 @@
+.detailed-benefits {
+  padding: 30px 0 25px;
+
+  @include media-min ($lg) {
+    padding: 65px 0 50px;
+  }
+
+  &__content {
+    display: flex;
+  }
+
+  &__list {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    margin-top: 34px;
+    gap: 28px;
+
+    @include media-min ($md) {
+      display: grid;
+      align-content: flex-start;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 30px;
+      margin-top: 66px;
+    }
+
+
+    @include media-min ($xl) {
+      column-gap: 118px;
+    }
+
+  }
+
+  &__item {
+    &--order {
+      order: 1;
+
+      @include media-min ($md) {
+        order: 0;
+      }
+    }
+  }
+
+  &__item-top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+
+    @include media-min ($lg) {
+      gap: 12px;
+      margin-bottom: 16px
+    }
+
+    & img {
+      width: 21px;
+      height: 21px;
+
+      @include media-min ($lg) {
+        width: 39px;
+        height: 39px;
+      }
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-weight: 600;
+    font-size: 14px;
+    color: #1e1d1b;
+    background-repeat: no-repeat;
+
+    @include media-min ($lg) {
+      font-size: 20px;
+    }
+
+    @include media-min ($xl) {
+      font-size: 24px;
+    }
+  }
+
+  &__benefit-item {
+    font-weight: 600;
+    font-size: 10px;
+    color: #1e1d1b;
+    position: relative;
+    padding-left: 10px;
+    max-width: 194px;
+    line-height: 1.2;
+
+    @include media-min ($md) {
+      max-width: 323px;
+    }
+
+    @include media-min ($lg) {
+      font-size: 16px;
+      padding-left: 18px;
+    }
+
+    @include media-min ($xl) {
+      font-size: 20px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      background-color: #1e1d1b;
+      border-radius: 100%;
+      width: 3px;
+      height: 3px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+
+      @include media-min ($lg) {
+        width: 6px;
+        height: 6px;
+      }
+    }
+  }
+
+  &__img {
+    margin-right: -15px;
+    max-height: 363px;
+
+    @include media-min ($md) {
+      margin-right: 0;
+    }
+
+    @include media-min ($lg) {
+      margin-top: -44px;
+      max-height: 494px;
+    }
+
+    & img {
+      height: 100%;
+    }
+  }
+}

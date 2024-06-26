@@ -1,0 +1,95 @@
+.paid-services {
+  padding: 25px 0 35px;
+
+  @include media-min ($lg) {
+    padding: 30px 0 50px;
+  }
+
+  &__top {
+    position: relative;
+    display: flex;
+  }
+
+  &__img {
+    &--absolute {
+
+      position: relative;
+      z-index: 1;
+      margin-top: 60px;
+      margin-left: -40px;
+    }
+
+    & img {
+      border-radius: 6px;
+
+      @include media-min ($lg) {
+        border-radius: 12px;
+      }
+    }
+  }
+
+  &__bottom {
+    padding-left: 20px;
+
+    @include media-min ($lg) {
+      padding-left: 0;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 24px;
+    color: #1e1d1b;
+    margin-bottom: 30px;
+    min-width: 177px;
+    margin-right: 250px;
+
+    @include media-min ($lg) {
+      font-size: 44px;
+      margin-bottom: 54px;
+
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include media-min ($lg) {
+      gap: 26px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    @include media-min ($lg) {
+      gap: 16px;
+    }
+
+    & img,
+    svg {
+      width: 21px;
+      height: 21px;
+
+      @include media-min ($md) {
+        width: 29px;
+        height: 29px;
+      }
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 15px;
+    color: #1e1d1b;
+
+    @include media-min ($lg) {
+      font-size: 20px;
+    }
+  }
+}

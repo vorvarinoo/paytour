@@ -1,0 +1,43 @@
+.reservation-details {
+  padding: 20px 0;
+
+  @include media-min ($lg) {
+    padding: 40px 0;
+  }
+
+  &__content {
+    border: 1px solid #1e1d1b33;
+    border-radius: 4px;
+    padding: 22px 22px 46px;
+
+    @include media-min ($lg) {
+      border-radius: 12px;
+      padding: 60px 78px 96px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 8px;
+
+    @include media-min ($lg) {
+      font-size: 44px;
+      margin-bottom: 18px;
+    }
+  }
+
+  &__descr {
+    font-weight: 500;
+    font-size: 14px;
+    color: #1e1d1b;
+    margin-bottom: 28px;
+
+    @include media-min ($lg) {
+      font-size: 24px;
+      margin-bottom: 56px;
+    }
+  }
+}

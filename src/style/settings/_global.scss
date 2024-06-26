@@ -1,0 +1,26 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: var(--min-site-width);
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+a {
+  color: var(--gray10);
+  text-decoration-color: var(--link-line, transparent);
+  line-height: 1.17;
+}

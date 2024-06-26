@@ -1,0 +1,47 @@
+.right-search {
+
+
+  @include media-min ($lg) {
+    padding-top: 30px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding-bottom: 40px;
+
+    @include media-min ($lg) {
+      gap: 140px;
+      padding: 0 65px 170px 20px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-start;
+    max-width: 548px;
+
+    @include media-min ($lg) {
+      margin-left: auto;
+    }
+  }
+
+  &__btn {
+    flex-basis: 50%;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #003b95;
+    border: 1px solid #003b95;
+    border-radius: 12px;
+    padding: 12px;
+
+    &--blue {
+      border: none;
+      color: #f5f5f5;
+      background: linear-gradient(178deg, #083e92 9.56%, #0b58c5 100%);
+    }
+  }
+}

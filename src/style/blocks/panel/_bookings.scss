@@ -1,0 +1,42 @@
+.bookings {
+
+  &__title {
+    margin-bottom: 26px;
+    padding-left: 15px;
+
+    @include media-min ($md) {
+      margin-bottom: 36px;
+      padding-left: 0;
+    }
+
+    @include media-min ($xl) {
+      margin-bottom: 26px;
+    }
+  }
+
+  &__info {
+    margin-bottom: 134px;
+    padding-left: 15px;
+
+    @include media-min ($md) {
+      margin-bottom: 242px;
+      padding-left: 0;
+    }
+
+    @include media-min ($xl) {
+      margin-bottom: 258px;
+    }
+
+    &--mb-small {
+      margin-bottom: 36px;
+
+      @include media-min ($md) {
+        margin-bottom: 30px;
+      }
+
+      @include media-min ($xl) {
+        margin-bottom: 34px;
+      }
+    }
+  }
+}

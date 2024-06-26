@@ -1,0 +1,71 @@
+.questions-form {
+  gap: 14px;
+
+  @include media-min ($lg) {
+    gap: 34px;
+  }
+
+  &__input {
+    font-weight: 600;
+    font-size: 10px;
+    color: var(--main-text);
+    border: 1px solid #003b95;
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 10px 20px;
+
+    @include media-min ($lg) {
+      font-size: 24px;
+      border-radius: 6px;
+      padding: 24px 50px;
+    }
+
+  }
+
+  &__btn {
+    font-weight: 600;
+    font-size: 10px;
+    color: #fff;
+    background-color: #003b95;
+    border-radius: 2px;
+    padding: 10px;
+
+    @include media-min ($lg) {
+      font-size: 24px;
+      border-radius: 6px;
+      padding: 24px;
+    }
+  }
+
+  &__input,
+  &__btn {
+    @include media-min ($md) {
+      max-width: 300px;
+    }
+
+    @include media-min ($lg) {
+      max-width: 580px;
+    }
+  }
+
+  & .checkbox {
+    font-weight: 600;
+    font-size: 8px;
+    color: #fff;
+
+    @include media-min ($lg) {
+      font-size: 18px;
+    }
+
+    &__box {
+      border: 1px solid #003b95;
+      width: 13px;
+      height: 13px;
+
+      @include media-min ($lg) {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+}

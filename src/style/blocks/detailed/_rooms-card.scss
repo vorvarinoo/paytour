@@ -1,0 +1,371 @@
+.rooms-card {
+  --main-text: #1e1d1b;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #003b95;
+  border-radius: 8px;
+  overflow: hidden;
+
+  @include media-min ($lg) {
+    max-width: 542px;
+    border-radius: 12px;
+  }
+
+  &--small {
+    height: 100%;
+    max-width: 350px;
+
+    & .rooms-features {
+      margin-bottom: 14px;
+    }
+  }
+
+  &--booking {
+    border: 1px solid #1e1d1b33;
+    border-radius: 8px;
+
+
+    @include media-min ($xl) {
+      border-radius: 12px;
+      max-width: 635px;
+      flex-shrink: 0;
+    }
+  }
+
+
+  &__top {}
+
+  &__img {
+    height: 242px;
+    margin-bottom: 20px;
+    width: 100%;
+
+    @include media-min ($lg) {
+      height: 380px;
+      margin-bottom: 34px;
+    }
+
+    &--small {
+      border-radius: 4px;
+      height: 99px;
+      margin-bottom: 16px;
+      padding: 10px 12px 0;
+
+      & img {
+        border-radius: 4px;
+      }
+
+      @include media-min ($lg) {
+        height: 154px;
+        margin-bottom: 26px;
+        padding: 16px 18px 0;
+
+        & img {
+          border-radius: 6px;
+        }
+      }
+    }
+
+    &--booking {
+      @include media-min ($lg) {
+        height: 328px;
+      }
+    }
+
+    & img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    padding: 0 28px;
+
+    @include media-min ($lg) {
+      padding: 0 42px;
+    }
+
+    &--small {
+      padding: 0 12px;
+
+      @include media-min ($lg) {
+        padding: 0 18px;
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 28px 22px;
+
+    @include media-min ($lg) {
+      padding: 0 42px 54px;
+    }
+
+    &--small {
+      padding: 0 12px 10px;
+
+      @include media-min ($lg) {
+        padding: 0 18px 16px;
+      }
+    }
+
+    &--booking {
+      @include media-min ($lg) {
+        padding: 22px 22px 52px;
+      }
+    }
+  }
+
+  &__title {
+    --main-text: #1e1d1b;
+
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--main-text);
+    margin-bottom: 12px;
+
+    @include media-min ($lg) {
+      font-size: 28px;
+      margin-bottom: 18px;
+    }
+
+    &--small {
+      font-size: 16px;
+      margin-bottom: 14px;
+
+      @include media-min ($lg) {
+        font-size: 24px;
+        margin-bottom: 22px;
+      }
+    }
+
+    &--hidden {
+      @include media-min ($lg) {
+        display: none;
+      }
+    }
+  }
+
+  &__cancel {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    color: #4cc538;
+    margin-bottom: 8px;
+    flex-shrink: 0;
+
+    @include media-min ($lg) {
+      font-size: 24px;
+      margin-bottom: 28px;
+    }
+
+    & svg,
+    img {
+      margin-right: 8px;
+      width: 20px;
+      height: 20px;
+
+      @include media-min ($lg) {
+        margin-right: 16px;
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  &__pay-info {
+    position: relative;
+    margin-bottom: 28px;
+    padding-top: 16px;
+
+    @include media-min ($lg) {
+      padding-top: 24px;
+      margin-bottom: 44px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #083e92;
+      height: 1px;
+
+      @include media-min ($lg) {
+        background-color: #003b95;
+        height: 2px;
+        left: -25px;
+        width: 120%;
+      }
+    }
+
+    &--booking {
+      padding-top: 16px;
+      margin-top: 14px;
+      margin-bottom: 0;
+
+      @include media-min ($lg) {
+        padding-top: 26px;
+        margin-top: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+    }
+  }
+
+
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+  }
+
+  &__price-old {
+    --main-text: #1e1d1bcc;
+
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--main-text);
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+
+    @include media-min ($lg) {
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+
+    & del {
+      text-decoration-color: var(--main-text);
+    }
+
+    &:after {
+      content: '-5%';
+      font-size: 6px;
+      color: #eaffe5cc;
+      background-color: #4cc538;
+      border-radius: 1px;
+      padding: 0 3px;
+      margin-left: 3px;
+
+      @include media-min ($lg) {
+        font-size: 10px;
+        border-radius: 2px;
+        padding: 0 6px;
+        margin-left: 12px;
+      }
+    }
+
+    &--small {
+      font-size: 10px;
+    }
+
+    &--hidden {
+      @include media-min ($lg) {
+        display: none;
+      }
+    }
+  }
+
+  &__price-new {
+    display: flex;
+    font-weight: 600;
+    font-size: 18px;
+    color: #1e1d1b;
+    white-space: nowrap;
+
+    @include media-min ($lg) {
+      font-size: 28px;
+    }
+
+    &--small {
+      font-size: 16px;
+
+      @include media-min ($lg) {
+        font-size: 24px;
+      }
+    }
+
+    &--booking {
+      font-size: 22px;
+
+      @include media-min ($lg) {
+        flex-direction: column;
+        justify-content: flex-start;
+        font-size: 36px;
+      }
+    }
+  }
+
+
+
+  &__person {
+    display: none;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--main-text);
+
+    @include media-min ($lg) {
+      display: block;
+    }
+  }
+
+  &__price-right {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 8px;
+    color: #1e1d1bcc;
+
+    @include media-min ($lg) {
+      font-size: 10px;
+    }
+
+    &--hidden {
+      @include media-min ($lg) {
+        display: none;
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__btn {
+    --main-text: #003b95;
+
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+    color: var(--main-text);
+    border: 1px solid #003b95;
+    padding: 10px;
+
+    @include media-min ($lg) {
+      font-size: 18px;
+      padding: 14px;
+    }
+
+    &--theme-blue {
+      --main-text: #fff;
+
+      color: var(--main-text);
+      background: linear-gradient(137deg, #083e92 20.66%, #0b58c5 100%);
+    }
+  }
+}

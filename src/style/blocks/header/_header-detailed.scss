@@ -1,0 +1,65 @@
+.header-detailed {
+  background: linear-gradient(180deg, #0b58c5 0%, #003b95 70.5%);
+  padding: 26px 0;
+  position: relative;
+  z-index: 2;
+
+  @include media-min ($xl) {
+    padding: 42px 0;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__menu {
+    display: none;
+
+    @include media-min ($lg) {
+      display: block;
+    }
+  }
+
+
+  &__list {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__link {
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #f5f5f5;
+
+
+    @include media-min ($xl) {
+      font-size: 18px;
+    }
+
+    &--btn {
+      background-color: #003b95;
+      border-radius: 6px;
+      padding: 8px 38px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+
+  &__buttons {
+    display: none;
+    align-items: center;
+    gap: 26px;
+
+    @include media-min ($md) {
+      display: flex;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+<header class="site__header header header--absolute-bg-color header-auth-user">
+  <div class="header-bg"></div>
+  <div class="container">
+    <div class="header-top">
+      <div class="header__left">
+        <a href="/"
+           class="logo">
+          <img src="img/logo.png"
+               width="202"
+               height="52"
+               alt="Логотип PAY TOUR">
+        </a>
+      </div>
+      <div class="header__right">
+        <a class="header__question"
+           href="#">
+          <img src="img/icon-question.svg"
+               aria-hidden="true"
+               width="26"
+               height="26">ЗАДАТЬ ВОПРОС</a>
+        <a class="header__notify"
+           href="#">
+          <img src="img/icon-notify.svg"
+               aria-hidden="true"
+               width="22"
+               height="25">
+        </a>
+        <a class="header__chosen"
+           href="page-no-favorites-panel.html">
+          <img src="img/icon-chosen.svg"
+               aria-hidden="true"
+               width="25"
+               height="25">
+        </a>
+        <a class="header__login header-auth-user__logout"
+           href="page-login.html">ВЫЙТИ</a>
+        <div class="header-auth-user__user-icon"
+             href="page-login.html">
+          <img src="img/user-icon.jpg"
+               alt="Фото пользователя">
+        </div>
+      </div>
+      <div class="burger">
+        <button class="btn-reset burger__btn"
+                aria-label="Меню">
+          <svg width="28"
+               height="18"
+               aria-hidden="true">
+            <use xlink:href="img/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <div id="dropdown"
+             class="burger__dropdown d-block">
+          <div class="burger__dropdown-bg">
+            <nav>
+              <div class="burger__dropdown-links">
+                <a href="page-no-bookings-panel.html">Личный кабинет</a>
+                <a href="#travel-blog">Блог о путешествиях</a>
+                <a href="#main-info">Преимущества TourPay</a>
+                <a href="#">Чат с поддержкой</a>
+                <a href="page-no-favorites-panel.html">Мои избранные отели</a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- @include('service-menu.html', {class: 'service--hide-desktop'}) -->
+</header>

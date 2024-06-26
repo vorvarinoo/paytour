@@ -1,0 +1,571 @@
+<aside class="filters col-lg-4 page-search__filters">
+  <h2 class="filters__title d-lg-none">Фильтры</h2>
+  <div class="filters__content">
+    <div class="filters-group d-none d-lg-block">
+      <div class="page-search__location">Омск, Россия</div>
+      <div class="filters-group__info">
+        <div class="page-search__date">16 мар 2024 — 17 мар 2024</div>
+        <div class="filters-group__row">
+          <div class="filters-group__info-item">1 номер для 2 гостей</div>
+          <a href="#">
+            <svg width="24"
+                 height="24"
+                 aria-hidden="true">
+              <use xlink:href="img/sprite.svg#icon-search"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="filters-group p-0">
+      <div class="filters-view-toggle">
+        <div class="filters-view-toggle__content">
+          <button class="btn-reset filters-view-toggle__btn active">
+            Список
+          </button>
+          <button class="btn-reset filters-view-toggle__btn ">
+            Карта
+          </button>
+        </div>
+      </div>
+
+      <div class="filters-favorite">
+        <a class="filters-favorite__link active"
+           href="page-search-favourites.html">
+          <img src="img/icon_favourites-heart-blue.svg"
+               aria-hidden="true"
+               width="24"
+               height="24">
+          Избранное</a>
+      </div>
+    </div>
+
+    <div class="filters-group">
+      <h3 class="filters-group__title">Cортировка</h3>
+      <select class="filters-select">
+        <option value="popularity">По популярности</option>
+        <option value="rating">По рейтингу</option>
+      </select>
+    </div>
+
+    <div class="filters-group filters-slider">
+      <h3 class="filters-group__title">Цена за ночь в <span>RUB</span></h3>
+      <div class="filters-slider__input">
+        <div class="filters-slider__field filters-slider__field--input-min">
+          <input type="text"
+                 value="100 ₽">
+        </div>
+        <div class="filters-slider__field filters-slider__field--input-max">
+          <input type="text"
+                 value="150000 ₽">
+        </div>
+      </div>
+      <div class="filters-slider__slider">
+        <div class="filters-slider__progress"></div>
+      </div>
+      <div class="filters-slider__range-input">
+        <input type="range"
+               class="filters-slider__range-min filters-slider__range"
+               min="100"
+               max="150000"
+               value="100"
+               step="100">
+        <input type="range"
+               class="filters-slider__range-max filters-slider__range"
+               min="100"
+               max="150000"
+               value="150000"
+               step="100">
+      </div>
+    </div>
+
+    <div class="filters-group">
+      <h3 class="filters-group__title">Тип размещения</h3>
+      <div class="checkboxs-group">
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          Отели, меблированные комнаты
+          <span class="checkbox__count">0</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          Хостелы, жилые помещения
+          <span class="checkbox__count">0</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          Апартаменты, квартиры
+          <span class="checkbox__count">0</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          Апарт-отели
+          <span class="checkbox__count">0</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          Гостевые дома
+          <span class="checkbox__count">0</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          Коттеджи, виллы, бунгало
+          <span class="checkbox__count">0</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          Кемпинги
+          <span class="checkbox__count">0</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          Глэмпинги
+          <span class="checkbox__count">10</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          Санатории
+          <span class="checkbox__count">10</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="filters-group filters-slider">
+      <h3 class="filters-group__title mb-0">Расположение</h3>
+      <p class="indent-reset filters-group__descr">от центра города</p>
+      <div class="filters-slider__location">
+        <input type="range"
+               min="30"
+               max="1000"
+               value="30"
+               step="1"
+               class="filters-slider__range filters-slider__location-input"
+               id="location">
+        <div class="filters-slider__location-value">
+          <input id="value-location"
+                 type="text"
+                 min="30"
+                 max="1000"
+                 value="30 км"
+                 step="1">
+        </div>
+      </div>
+    </div>
+
+    <div class="filters-group">
+      <h3 class="filters-group__title">Услуги и удобства</h3>
+      <div class="filters-group__items">
+        <div class="filters-group__item">
+          <h4 class="filters-group__subtitle">В отеле:</h4>
+          <div class="checkboxs-group">
+            <label class="checkbox">
+              <input type="checkbox">
+              <span class="checkbox__box"></span>
+              Бесплатный интернет
+              <span class="checkbox__count">0</span>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox">
+              <span class="checkbox__box"></span>
+              Трансфер
+              <span class="checkbox__count">10</span>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox">
+              <span class="checkbox__box"></span>
+              Парковка
+              <span class="checkbox__count">0</span>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox">
+              <span class="checkbox__box"></span>
+              Бассейн
+              <span class="checkbox__count">10</span>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox">
+              <span class="checkbox__box"></span>
+              Фитнес
+              <span class="checkbox__count">0</span>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox">
+              <span class="checkbox__box"></span>
+              Бар или ресторан
+              <span class="checkbox__count">10</span>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox">
+              <span class="checkbox__box"></span>
+              Спа-услуги
+              <span class="checkbox__count">0</span>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox">
+              <span class="checkbox__box"></span>
+              Горнолыжный склон рядом
+              <span class="checkbox__count">10</span>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox">
+              <span class="checkbox__box"></span>
+              Пляж рядом
+              <span class="checkbox__count">0</span>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox">
+              <span class="checkbox__box"></span>
+              Джакузи
+              <span class="checkbox__count">0</span>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox">
+              <span class="checkbox__box"></span>
+              Зарядка электромобилей
+              <span class="checkbox__count">0</span>
+            </label>
+          </div>
+        </div>
+        <div class="filters-group__item">
+          <h4 class="filters-group__subtitle">В номере:</h4>
+          <div class="checkboxs-group">
+            <label class="checkbox">
+              <input type="checkbox">
+              <span class="checkbox__box"></span>
+              Кондиционер
+              <span class="checkbox__count">0</span>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox">
+              <span class="checkbox__box"></span>
+              Ванная комната в номере
+              <span class="checkbox__count">0</span>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox">
+              <span class="checkbox__box"></span>
+              Кухня
+              <span class="checkbox__count">0</span>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox">
+              <span class="checkbox__box"></span>
+              Балкон
+              <span class="checkbox__count">0</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="filters-group">
+      <h3 class="filters-group__title">Особенности размещения</h3>
+      <div class="checkboxs-group">
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          Подходит для детей
+          <span class="checkbox__count">0</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          Для гостей с ограниченными
+          возможностями
+          <span class="checkbox__count">0</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          Разрешено с домашними животными
+          <span class="checkbox__count">0</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          Можно курить
+          <span class="checkbox__count">0</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="filters-group">
+      <h3 class="filters-group__title">Питание</h3>
+      <div class="checkboxs-group">
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          Питание не включено
+          <span class="checkbox__count">0</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          Завтрак включён
+          <span class="checkbox__count">0</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          Завтрак + обед
+          или ужин включены
+          <span class="checkbox__count">0</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          Завтрак, обед и ужин включены
+          <span class="checkbox__count">0</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          Всё включено
+          <span class="checkbox__count">0</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="filters-group">
+      <h3 class="filters-group__title">Количество звёзд</h3>
+      <div class="checkboxs-group">
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          <div class="filters-group__stars-rating"
+               title="Рейтинг 5">
+            <span class="filters-group__item-star"
+                  style="--star-rating: 5;"
+                  aria-label="Рейтинг 5">
+            </span>
+          </div>
+          <span class="checkbox__count">0</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          <div class="filters-group__stars-rating"
+               title="Рейтинг 4">
+            <span class="filters-group__item-star"
+                  style="--star-rating: 4;"
+                  aria-label="Рейтинг 4">
+            </span>
+          </div>
+          <span class="checkbox__count">0</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          <div class="filters-group__stars-rating"
+               title="Рейтинг 3">
+            <span class="filters-group__item-star"
+                  style="--star-rating: 3;"
+                  aria-label="Рейтинг 3">
+            </span>
+          </div>
+          <span class="checkbox__count">0</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          <div class="filters-group__stars-rating"
+               title="Рейтинг 2">
+            <span class="filters-group__item-star"
+                  style="--star-rating: 2;"
+                  aria-label="Рейтинг 2">
+            </span>
+          </div>
+          <span class="checkbox__count">0</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          <div class="filters-group__stars-rating"
+               title="Рейтинг 1">
+            <span class="filters-group__item-star"
+                  style="--star-rating: 1;"
+                  aria-label="Рейтинг 1">
+            </span>
+          </div>
+          или без звёзд
+          <span class="checkbox__count">0</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="filters-group">
+      <h3 class="filters-group__title">Оценка по отзывам</h3>
+      <div class="checkboxs-group">
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          Супер: 9+
+          <span class="checkbox__count">0</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          Отлично: 8+
+          <span class="checkbox__count">0</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          Очень хорошо: 7+
+          <span class="checkbox__count">0</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          Хорошо: 6+
+          <span class="checkbox__count">0</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          Неплохо: 5+
+          <span class="checkbox__count">0</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="filters-group">
+      <h3 class="filters-group__title">Оплата и бронирование</h3>
+      <div class="checkboxs-group">
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          Для бронирования не нужна
+          карта
+          <span class="checkbox__count">0</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          Есть бесплатная отмена
+          <span class="checkbox__count">0</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          Оплата сейчас
+          <span class="checkbox__count">0</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          Оплата на месте
+          <span class="checkbox__count">0</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="filters-group">
+      <h3 class="filters-group__title">Число комнат</h3>
+      <div class="checkboxs-group">
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          1 комната
+          <span class="checkbox__count">0</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          2 комнаты
+          <span class="checkbox__count">0</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          3 комнаты
+          <span class="checkbox__count">0</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          4 комнаты
+          <span class="checkbox__count">0</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          5 комнат
+          <span class="checkbox__count">0</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          6 комнат
+          <span class="checkbox__count">0</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="filters-group">
+      <h3 class="filters-group__title">Тип кроватей</h3>
+      <div class="checkboxs-group">
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          Двуспальная кровать
+          <span class="checkbox__count">0</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          Отдельные кровати
+          <span class="checkbox__count">0</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="filters-group">
+      <h3 class="filters-group__title">Название отеля</h3>
+      <input class="filters-input"
+             type="text"
+             value="Hilton">
+    </div>
+
+    <div class="filters-group">
+      <h3 class="filters-group__title">Достопримечательности</h3>
+      <div class="checkboxs-group">
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          Советский парк
+          <span class="checkbox__count">0</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          Парк Зеленый остров
+          <span class="checkbox__count">0</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="filters-group">
+      <h3 class="filters-group__title">Сеть отелей</h3>
+      <div class="checkboxs-group">
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__box"></span>
+          Ibis
+          <span class="checkbox__count">0</span>
+        </label>
+      </div>
+    </div>
+  </div>
+</aside>

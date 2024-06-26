@@ -1,0 +1,44 @@
+.header-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    background-image: url(../img/background-header.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: 947px 191px;
+    width: 100%;
+    height: 191px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.04;
+    pointer-events: none;
+    left: 50%;
+    margin-right: -50%;
+    transform: translateX(-50%);
+
+    @include media-min ($md) {
+      background-size: 951px 631px;
+      height: 469px;
+      width: 690px;
+    }
+
+    @include media-min ($lg) {
+      background-size: 813px 546px;
+      height: 420px;
+      width: 929px;
+    }
+
+    @include media-min ($xl) {
+      background-size: 1310px 850px;
+      height: 727px;
+      width: 100%;
+    }
+  }
+}

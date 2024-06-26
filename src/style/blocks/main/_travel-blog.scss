@@ -1,0 +1,360 @@
+.travel-blog {
+
+  &__title {
+    margin-bottom: 24px;
+
+    @include media-min ($md) {
+      margin-bottom: 38px;
+    }
+
+    @include media-min ($lg) {
+      margin-bottom: 66px;
+    }
+
+    @include media-min ($xl) {
+      margin-bottom: 35px;
+    }
+  }
+
+  &__content {
+    position: relative;
+    background: linear-gradient(137deg, #083e92 20.66%, #0b58c5 100%);
+    padding: 30px 10px;
+    border-radius: 11px;
+    display: flex;
+    flex-direction: row-reverse;
+
+    @include media-min ($md) {
+      padding: 53px 13px 38px 50px;
+    }
+
+    @include media-min ($lg) {
+      background: transparent;
+      flex-direction: row;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      padding: 0;
+    }
+  }
+
+  &__images {
+    position: relative;
+    padding-top: 192px;
+    border-radius: 11px;
+    overflow: hidden;
+    margin-bottom: 22px;
+
+    @include media-min ($lg) {
+      border-radius: 11px;
+    }
+
+    @include media-min ($lg) {
+      border-radius: 13px;
+    }
+
+    & > img,
+    .travel-blog__images-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &--big {
+      width: 100%;
+      max-width: 200px;
+      padding-top: 256px;
+      max-height: 256px;
+      margin-top: 40px;
+
+      @include media-min ($lg) {
+        min-height: 100%;
+        max-width: 100%;
+        padding-top: 453px;
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    color: #f5f5f5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    @include media-min ($lg) {
+      font-size: 16px;
+    }
+
+    @include media-min ($xl) {
+      font-size: 20px;
+    }
+  }
+
+  &__images-bg {
+    --background: rgba(0, 0, 0, 0.6);
+    border-image: fill 0 linear-gradient(var(--background), var(--background));
+  }
+
+  &__navigation {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 7px;
+    right: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+
+    @include media-min ($lg) {
+      left: 14px;
+      right: 14px;
+    }
+
+    @include media-min ($xl) {
+      left: 17px;
+      right: 17px;
+
+    }
+
+    & button {
+      cursor: pointer;
+      border-radius: 100%;
+      border: 1px solid #f5f5f5;
+      width: 22px;
+      height: 22px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include media-min ($lg) {
+        left: 14px;
+        right: 14px;
+      }
+
+      @include media-min ($xl) {
+        width: 26px;
+        height: 26px;
+      }
+
+      &.travel-blog__btn-prev {
+        transform: rotate(180deg);
+      }
+
+      & svg {
+        @include media-min ($lg) {
+          width: 8px;
+          height: 14px;
+        }
+
+        @include media-min ($xl) {
+          width: 9px;
+          height: 16px;
+        }
+      }
+
+    }
+
+
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 20px;
+    color: #f5f5f5;
+    max-width: 160px;
+    margin: 0;
+
+
+    @include media-min ($md) {
+      font-size: 32px;
+      margin-bottom: 20px;
+      max-width: 250px;
+    }
+
+    @include media-min ($lg) {
+      font-size: 40px;
+      max-width: 310px;
+    }
+
+    @include media-min ($xl) {
+      font-size: 44px;
+      max-width: 100%;
+    }
+  }
+
+  &__info {
+    @include media-min ($md) {
+      margin-right: 16px;
+    }
+
+    @include media-min ($lg) {
+      margin-right: 0;
+      background: linear-gradient(137deg, #083e92 20.66%, #0b58c5 100%);
+      padding: 40px 14px 14px 24px;
+      border-radius: 11px;
+    }
+
+    @include media-min ($xl) {
+      margin-right: 0;
+      padding: 50px 17px 18px 29px;
+      border-radius: 13px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include media-min ($md) {
+      margin-bottom: 18px;
+    }
+
+    @include media-min ($lg) {
+      margin-bottom: 25px;
+    }
+
+    @include media-min ($xl) {
+      margin-bottom: 20px;
+    }
+
+    & > li {
+      margin-left: 10px;
+      margin-bottom: 10px;
+
+      @include media-min ($md) {
+        margin-left: 12px;
+        margin-bottom: 15px;
+      }
+
+      @include media-min ($md) {
+        margin-left: 15px;
+        margin-bottom: 18px;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    color: #f5f5f5;
+    padding: 5px 12px 4px;
+    border: 1px solid #f5f5f5;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+
+    @include media-min ($md) {
+      padding: 5px 21px;
+      font-size: 16px;
+    }
+
+    @include media-min ($xl) {
+      font-size: 20px;
+      padding: 5.5px 24px;
+    }
+
+    &.is-selected {
+      color: #083e92;
+      background-color: #fff;
+    }
+
+  }
+
+  &__descr {
+    position: relative;
+    font-weight: 500;
+    font-size: 12px;
+    color: #f5f5f5;
+    padding-top: 18px;
+    margin-bottom: 14px;
+
+    @include media-min ($md) {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    @include media-min ($lg) {
+      font-size: 15px;
+    }
+
+    @include media-min ($xl) {
+      font-size: 18px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #fff;
+      top: 0;
+      left: 0;
+    }
+
+    & > p {
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__wrap-btn {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+
+    & .travel-blog__navigation {
+      width: 60px;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    pointer-events: auto;
+    font-weight: 600;
+    font-size: 14px;
+
+    @include media-min ($md) {
+      font-size: 16px;
+    }
+
+    @include media-min ($xl) {
+      font-size: 20px;
+    }
+  }
+
+  &__btn-icon {
+    width: 33px;
+    height: 33px;
+    background-color: #003B95;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 11px;
+  }
+}

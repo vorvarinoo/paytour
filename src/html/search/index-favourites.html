@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="page-search row">
+    <div class="page-search__top col-12 d-lg-none ">
+      <div class="page-search__info">
+        <div class="page-search__location mb-1">Омск, Россия</div>
+        <div class="page-search__date">16 мар 2024 — 17 мар 2024</div>
+      </div>
+      <div class="page-search__search">
+        <label class="page-search__label">
+          <svg width="16"
+               height="16"
+               aria-hidden="true">
+            <use xlink:href="img/sprite.svg#icon-search"></use>
+          </svg>
+          <input class="page-search__input"
+                 type="text"
+                 placeholder="Поиск по названию отеля">
+        </label>
+        <button class="btn-reset page-search__btn page-search__btn--filters">
+          <svg width="22"
+               height="18"
+               aria-hidden="true">
+            <use xlink:href="img/sprite.svg#icon-map-settings"></use>
+          </svg>
+        </button>
+        <button class="btn-reset page-search__btn page-search__btn--map">
+          <svg width="20"
+               height="24"
+               aria-hidden="true">
+            <use xlink:href="img/sprite.svg#icon-map"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    @include('filters-favourites.html')
+    @include('right-search-favourites.html')
+  </div>
+</div>

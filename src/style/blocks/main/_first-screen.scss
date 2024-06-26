@@ -1,0 +1,23 @@
+.first-screen {
+  background: linear-gradient(180deg, #0B58C5 0%, #003B95 70%);
+  padding-top: 87px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+
+
+
+  @include media-min ($md) {
+    padding-top: 110px;
+  }
+
+  @include media-min ($lg) {
+    padding-top: 135px;
+  }
+
+  @include media-min ($xl) {
+    padding-top: 140px;
+  }
+
+}

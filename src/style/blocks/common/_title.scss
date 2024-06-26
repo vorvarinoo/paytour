@@ -1,0 +1,43 @@
+.title {
+  margin: 0;
+  font-family: $main-font;
+  font-weight: 600;
+  color: var(--main-text);
+
+  &--small {
+    font-size: 20px;
+
+    @include media-min ($md) {
+      font-size: 32px;
+    }
+
+    @include media-min ($lg) {
+      font-size: 40px;
+    }
+
+    @include media-min ($xl) {
+      font-size: 44px;
+    }
+  }
+
+  &--large {
+    font-size: 24px;
+
+    @include media-min ($md) {
+      font-size: 40px;
+    }
+
+    @include media-min ($xl) {
+      font-size: 44px;
+    }
+  }
+
+  &--blue {
+    color: var(--blue100);
+  }
+
+  &--case {
+    text-transform: uppercase;
+  }
+
+}

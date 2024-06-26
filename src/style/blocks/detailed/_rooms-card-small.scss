@@ -1,0 +1,115 @@
+.rooms-card-small {
+  position: relative;
+  height: 100%;
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+
+  &__content {
+    --card-background: rgba(0, 0, 0, 0.5);
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 23px 0 20px 0;
+    border-image: fill 0 linear-gradient(var(--card-background), var(--card-background));
+
+    @include media-min ($lg) {
+      padding-top: 48px;
+      padding-bottom: 34px;
+    }
+  }
+
+
+  &__top {
+    --main-text: #fff;
+
+    margin-bottom: auto;
+    display: flex;
+    justify-content: flex-end;
+
+    & span {
+      font-weight: 500;
+      font-size: 8px;
+      color: var(--main-text);
+      background-color: #083e92;
+      border-radius: 3px 0 0 3px;
+      padding: 4px 16px 4px 12px;
+
+      @include media-min ($lg) {
+        font-size: 14px;
+        padding: 5px 22px;
+        border-radius: 5px 0 0 5px;
+      }
+    }
+  }
+
+  &__bottom {
+    --main-text: #fff;
+    padding: 0 16px 0 12px;
+
+    @include media-min ($lg) {
+      padding: 0 20px 0 20px;
+    }
+  }
+
+  &__title {
+    display: block;
+    font-weight: 600;
+    font-size: 10px;
+    color: var(--main-text);
+    line-height: 1.2;
+    margin-top: 30px;
+    margin-bottom: 6px;
+    max-width: 134px;
+
+    @include media-min ($lg) {
+      font-size: 16px;
+      margin-bottom: 10px;
+      max-width: 210px;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  & .rooms-features__item {
+    font-size: 8px;
+
+    @include media-min ($lg) {
+      font-size: 14px;
+    }
+
+    & svg {
+      margin-right: 6px;
+
+      @include media-min ($lg) {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  & .rooms-features__item--small {
+    font-size: 6px;
+
+    & svg {
+      margin-right: 4px;
+    }
+
+    @include media-min ($lg) {
+      font-size: 9px;
+
+      & svg {
+        margin-right: 6px;
+      }
+    }
+  }
+}

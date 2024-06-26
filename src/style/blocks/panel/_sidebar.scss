@@ -1,0 +1,105 @@
+.sidebar-panel {
+  position: relative;
+  z-index: 1;
+
+  &--padding {
+    padding: 66px 48px 183px 0;
+  }
+
+  &::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #0548ab;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__inner-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__name-user {
+    font-weight: 500;
+    font-size: 18px;
+    color: #083e92;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    & > a {
+      display: inline-flex;
+    }
+  }
+
+  &__list {
+    margin-top: 63px;
+  }
+
+  &__item {
+    margin-bottom: 9px;
+    position: relative;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 16px;
+    color: #1e1d1b;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url("data:image/svg+xml,%3Csvg width='7' height='12' viewBox='0 0 7 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.33317 6.55222C6.63815 6.24724 6.63815 5.75276 6.33317 5.44778L1.36322 0.477833C1.05824 0.172852 0.563766 0.172852 0.258785 0.477833C-0.046196 0.782814 -0.046196 1.27729 0.258785 1.58227L4.67652 6L0.258785 10.4177C-0.046196 10.7227 -0.046196 11.2172 0.258785 11.5222C0.563766 11.8271 1.05824 11.8271 1.36322 11.5222L6.33317 6.55222ZM5 6.78095H5.78095V5.21905H5V6.78095Z' fill='%231E1D1B' /%3E%3C/svg%3E");
+      top: 50%;
+      transform: translateY(-50%);
+      right: 5px;
+      width: 7px;
+      height: 12px;
+    }
+
+    &[data-value]:after {
+      content: attr(data-value);
+      position: absolute;
+      font-weight: 700;
+      font-size: 11px;
+      color: #1e1d1b;
+      border-radius: 100%;
+      border: solid 1px #0548ab;
+      min-width: 21px;
+      height: 21px;
+      padding: 0 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #CDDAEE;
+      right: 25px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+}

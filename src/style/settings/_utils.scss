@@ -1,0 +1,54 @@
+.visually-hidden:not(:focus):not(:active),
+input[type="radio"].visually-hidden,
+input[type="checkbox"].visually-hidden {
+  @include visually-hidden;
+}
+
+
+.site {
+  &__content {
+    &--overflow-x {
+      overflow-x: hidden;
+      overflow-y: hidden;
+
+      &::-webkit-scrollbar {
+        ms-overflow-style: none;
+        scrollbar-width: none
+      }
+    }
+  }
+
+  &__section {
+    padding-bottom: 54px;
+
+    @include media-min ($md) {
+      padding-bottom: 107px;
+    }
+
+    @include media-min ($lg) {
+      padding-bottom: 138px;
+    }
+
+    @include media-min ($xl) {
+      padding-bottom: 119px;
+    }
+  }
+}
+
+
+
+.indent-reset {
+  @include indent-reset;
+}
+
+.list-reset {
+  @include list-reset;
+}
+
+.btn-reset {
+  @include btn-reset;
+}
+
+.custom-scroll {
+  @include custom-scroll;
+}

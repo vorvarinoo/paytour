@@ -1,0 +1,61 @@
+.panel-form {
+
+
+  & .form__inner {
+    gap: 18px;
+    margin-bottom: 36px;
+
+    @include media-min ($md) {
+      gap: 28px;
+    }
+
+    @include media-min ($xl) {
+      gap: 32px;
+      margin-bottom: 46px;
+    }
+  }
+
+  & .form__field {
+    gap: 8px;
+
+    @include media-min ($md) {
+      gap: 10px;
+    }
+
+    @include media-min ($xl) {
+      gap: 12px;
+    }
+  }
+
+  & .form__label {
+    font-size: 14px;
+
+    @include media-min ($md) {
+      font-size: 22px;
+    }
+
+    @include media-min ($xl) {
+      font-size: 24px;
+    }
+  }
+
+  & .form__input {
+    font-size: 14px;
+    border-radius: 7px;
+    border: 1px solid #02409e;
+    padding: 12px 22px;
+
+    @include media-min ($md) {
+      font-size: 22px;
+      border-radius: 10px;
+      padding: 16px 34px;
+    }
+
+    @include media-min ($xl) {
+      font-size: 24px;
+      border-radius: 12px;
+      padding: 20px 40px;
+    }
+  }
+
+}

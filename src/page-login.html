@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  @include('html/head/index.html')
+  <title>Авторизация</title>
+</head>
+
+<body class="indent-reset site">
+  <div aria-hidden="true"
+       id="site-top"></div>
+  <div class="site__container">
+    @include('html/header/header-login.html')
+    <div class="site__content">
+      <main>
+        @include('html/auth/login.html')
+      </main>
+    </div>
+    @include('html/footer/index.html')
+  </div>
+  @include('html/common/scripts.html')
+</body>
+
+</html>

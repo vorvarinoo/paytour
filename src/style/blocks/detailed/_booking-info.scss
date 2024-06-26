@@ -1,0 +1,101 @@
+.booking-info {
+  padding: 25px 0;
+
+  &__title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 24px;
+    color: #1e1d1b;
+    padding: 14px 22px;
+    background-color: #d9e2ef;
+    border-radius: 6px;
+    position: relative;
+    top: 5px;
+
+    @include media-min ($lg) {
+      font-size: 44px;
+      padding: 27px 78px;
+      border-radius: 12px;
+      top: 10px;
+    }
+  }
+
+  &__timeline {
+    padding: 28px 22px 36px;
+    border: 1px solid #1e1d1b33;
+    border-radius: 0 0 6px 6px;
+
+    @include media-min ($lg) {
+      padding: 44px 78px 68px;
+      border-radius: 0 0 12px 12px;
+    }
+  }
+
+  &__subtitle {
+    position: relative;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--main-text);
+    padding-left: 28px;
+    margin-bottom: 14px;
+
+    @include media-min ($lg) {
+      font-size: 24px;
+      padding-left: 45px;
+      margin-bottom: 26px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url('../img/icon_clocks.svg');
+      background-repeat: no-repeat;
+      width: 23px;
+      height: 23px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+
+      @include media-min ($lg) {
+        width: 35px;
+        height: 35px;
+        background-size: 35px 35px;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-left: 28px;
+
+    @include media-min ($lg) {
+      gap: 26px;
+      padding-left: 45px;
+    }
+  }
+
+  &__checkin,
+  &__checkout {
+    font-weight: 600;
+    font-size: 10px;
+    color: #1e1d1b99;
+    margin-bottom: 4px;
+
+    @include media-min ($lg) {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__time {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--main-text);
+
+    @include media-min ($lg) {
+      font-size: 24px;
+    }
+  }
+}

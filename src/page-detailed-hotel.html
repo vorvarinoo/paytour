@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  @include('html/head/index.html')
+  <title>VANVA (Ванва)</title>
+</head>
+
+<body class="indent-reset site">
+  <div aria-hidden="true"
+       id="site-top"></div>
+  <div class="site__container">
+    @include('html/header/header-detailed.html')
+    <div class="site__content">
+      <main>
+        @include('html/common/breadcrumbs.html')
+        @include('html/detailed/hotel/index.html')
+      </main>
+    </div>
+    @include('html/footer/index.html')
+  </div>
+  @include('html/common/scripts.html')
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+.auth {
+  padding: 48px 0 36px;
+
+  @include media-min ($lg) {
+    font-size: 20px;
+    padding: 78px 0 124px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--main-text);
+    text-align: center;
+    margin-bottom: 37px;
+
+    & a {
+      color: #02409e;
+      border-bottom: 1px solid currentColor;
+
+      @include media-min ($md) {
+        border-width: 2px;
+      }
+    }
+
+    @include media-min ($md) {
+      font-size: 32px;
+    }
+  }
+
+  &__tabs {
+    margin-bottom: 22px;
+  }
+
+  &__buttons {
+    margin-bottom: 40px;
+
+    & .tabs__btn {
+      @include media-min ($md) {
+        font-size: 20px;
+      }
+    }
+  }
+
+
+  &__alternative-item {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 21px;
+    width: 100%;
+    overflow: hidden;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--main-text);
+    line-height: 24px;
+    margin-bottom: 40px;
+
+    @include media-min ($md) {
+      font-size: 24px;
+    }
+
+
+  }
+
+  &__alternative-line {
+    position: relative;
+    width: 100%;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 2px;
+      width: 100%;
+      background: rgba(30, 29, 27, 0.498);
+      left: 0;
+    }
+  }
+
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    grid-auto-rows: 70px;
+    gap: 26px;
+
+    @include media-min ($md) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 104px;
+      gap: 70px;
+    }
+
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #02409e;
+    border-radius: 10px;
+    padding: 10px 10px;
+
+    @include media-min ($md) {
+      padding: 16px 16px;
+    }
+  }
+}
+
+.login-page {
+  &__forgot-password {
+    font-weight: 600;
+    font-size: 16px;
+    color: #083E9299;
+    margin-bottom: 22px;
+
+    @include media-min ($md) {
+      font-size: 22px;
+    }
+  }
+}
+
+.signup-page {
+  &__checkbox {
+    font-weight: 600;
+    font-size: 12px;
+    color: #083e9299;
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 30px;
+
+
+
+    @include media-min ($md) {
+      font-size: 20px;
+      margin-top: 60px;
+    }
+
+    & .checkbox__box {
+      width: 15px;
+      height: 15px;
+      margin-right: 12px;
+      border-radius: 1px;
+
+      @include media-min ($md) {
+        width: 26px;
+        height: 26px;
+        margin-right: 16px;
+        border-radius: 2px;
+      }
+    }
+  }
+
+}

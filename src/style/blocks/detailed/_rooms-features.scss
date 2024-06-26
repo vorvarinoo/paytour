@@ -1,0 +1,160 @@
+.rooms-features {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+
+  @include media-min ($lg) {
+    margin-bottom: 24px;
+  }
+
+  &--grid-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+
+    @include media-min ($lg) {
+      gap: 12px;
+    }
+  }
+
+  &--bg {
+    & .rooms-features__item {
+      border-radius: 2px;
+      padding: 4px 14px 4px 8px;
+      font-weight: 500;
+      font-size: 8px;
+
+      @include media-min ($lg) {
+        border-radius: 4px;
+        font-size: 14px;
+        padding: 8px 20px 8px 12px;
+      }
+    }
+  }
+
+  &--flex-column {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &--small {
+    flex-basis: 100%;
+    max-width: 154px;
+
+    @include media-min ($lg) {
+      max-width: 228px;
+    }
+
+    & li {
+      width: 100%;
+    }
+  }
+
+  &--booking {
+    flex-direction: column;
+    gap: 7px;
+
+    @include media-min ($lg) {
+      gap: 34px;
+      margin-bottom: 0;
+    }
+
+    & .rooms-features__item {
+      width: max-content;
+      font-weight: 600;
+      font-size: 12px;
+
+      @include media-min ($lg) {
+        font-size: 24px;
+        padding: 9px 49px 9px 31px;
+      }
+
+      & svg,
+      img {
+        margin-right: 6px;
+
+
+        @include media-min ($lg) {
+          margin-right: 10px;
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: 500;
+    font-size: 10px;
+    color: var(--main-text);
+
+    @include media-min ($lg) {
+      font-size: 16px;
+    }
+
+    & svg,
+    img {
+      margin-right: 6px;
+      flex-shrink: 0;
+
+      @include media-min ($lg) {
+        margin-right: 12px;
+        width: 23px;
+        height: 23px;
+      }
+    }
+
+    &--small {
+      font-weight: 600;
+      font-size: 6px;
+
+      @include media-min ($lg) {
+        font-size: 9px;
+      }
+
+      & svg {
+        margin-right: 6px;
+      }
+    }
+
+    &--big {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      font-size: 12px;
+      color: var(--main-text);
+
+      @include media-min ($lg) {
+        font-size: 24px;
+      }
+
+      & img,
+      svg {
+        margin-right: 10px;
+
+        @include media-min ($lg) {
+          margin-right: 16px;
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+
+    &--pay {
+      background-color: #eaffe5;
+      color: #4cc538;
+    }
+
+    &--green {
+      background-color: #eaffe5;
+    }
+
+    &--gray {
+      background-color: #d9d9d9;
+    }
+  }
+}

@@ -1,0 +1,86 @@
+.breadcrumbs {
+  color: var(--breadcrumbs-text, var(--main-text));
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-top: 34px;
+
+  @include media-min ($lg) {
+    padding-top: 80px;
+  }
+
+  &__item {
+    display: inline-flex;
+    margin-bottom: 5px;
+
+    @include media-min ($lg) {
+      margin-bottom: 9px;
+    }
+
+    & + &::before {
+      padding-left: 10px;
+      padding-right: 10px;
+      content: '';
+      background-image: url("data:image/svg+xml,%3Csvg width='4' height='7' viewBox='0 0 5 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.35355 4.35355C4.54882 4.15829 4.54882 3.84171 4.35355 3.64645L1.17157 0.464466C0.976311 0.269204 0.659728 0.269204 0.464466 0.464466C0.269204 0.659728 0.269204 0.976311 0.464466 1.17157L3.29289 4L0.464466 6.82843C0.269204 7.02369 0.269204 7.34027 0.464466 7.53553C0.659728 7.7308 0.976311 7.7308 1.17157 7.53553L4.35355 4.35355ZM3 4.5H4V3.5H3V4.5Z' fill='%231E1D1B' /%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @include media-min ($lg) {
+        padding-left: 16px;
+        padding-right: 16px;
+        background-size: 6px 9px;
+        background-position: center center;
+      }
+    }
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 10px;
+    color: #1e1d1b;
+    text-decoration-color: transparent;
+
+    @include media-min ($lg) {
+      font-size: 16px;
+      transition: color .2s ease-in-out, text-decoration-color .2s ease-in-out;
+
+      &:hover {
+        color: #003b95;
+        text-decoration-color: #003b95;
+      }
+    }
+  }
+
+  &__date {
+    display: flex;
+    font-weight: 500;
+    font-size: 8px;
+    color: #1e1d1b;
+
+    & span {
+      display: flex;
+      align-items: center;
+    }
+
+    @include media-min ($lg) {
+      font-size: 14px;
+    }
+  }
+
+  &__link + &__date::before {
+    content: '';
+    padding-left: 5px;
+    padding-right: 5px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2' height='4' viewBox='0 0 8 16' fill='%23%231e1d1b'%3E%3Cpath fill-rule='evenodd' d='M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @include media-min ($lg) {
+      padding-left: 10px;
+      padding-right: 10px;
+      background-size: 3px 6px;
+      background-position: center center;
+    }
+  }
+}

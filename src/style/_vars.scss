@@ -1,0 +1,37 @@
+:root {
+  --white: #FFFFFF;
+  --gray10: #F5F5F5;
+  --blue50: #0B58C5;
+  --blue100: #083E92;
+  --black: #000000;
+  --red100: red;
+  --dark-coffee: #1e1d1b;
+
+
+
+  // other vars
+  --min-site-width: 360px;
+  --max-site-width: 1590px;
+  --b-radius: 4px;
+
+  // theme vars
+  --main-text: var(--dark-coffee);
+  --main-text-inv: var(--white);
+  --main-bg: var(--white);
+  --main-bg-inv: var(--gray70);
+  --accent: var(--red100);
+  --link-hover: var(--red40);
+  --btn-text: var(--white);
+  --btn-bg: var(--red100);
+  --border: var(--gray50);
+  --error: var(--red100);
+
+
+}
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1600px;
+$main-font: "Gilroy";

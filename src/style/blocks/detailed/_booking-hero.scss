@@ -1,0 +1,27 @@
+.booking-hero {
+  padding-top: 40px;
+
+  @include media-min ($lg) {
+    padding-top: 76px;
+    padding-bottom: 20px;
+  }
+
+  &__content {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    @include media-min ($lg) {
+      font-size: 44px;
+      text-transform: none;
+      margin-bottom: 48px;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.form {
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__label {
+    font-weight: 500;
+    color: var(--main-text);
+  }
+
+  &__input {
+    font-weight: 500;
+    color: var(--main-text);
+    border: none;
+  }
+
+  &__btn {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+  }
+}

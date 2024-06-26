@@ -1,0 +1,52 @@
+.detailed-form {
+  --img-background: rgba(0, 0, 0, 0.4);
+
+  background-image: url('../img/img_background-detailed-form.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-image: fill 0 linear-gradient(var(--img-background), var(--img-background));
+  padding: 45px 0 26px;
+
+  @include media-min ($lg) {
+    padding: 76px 0 46px;
+  }
+
+  &__content {
+    margin: 0 auto;
+    max-width: 224px;
+
+    @include media-min ($md) {
+      margin: 0;
+      max-width: 100%;
+    }
+
+    @include media-min ($lg) {
+      margin: 0;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 4px;
+
+    @include media-min ($lg) {
+      font-size: 44px;
+      margin-bottom: 6px;
+    }
+  }
+
+  &__descr {
+    font-weight: 600;
+    font-size: 10px;
+    color: #fff;
+    margin-bottom: 22px;
+
+    @include media-min ($lg) {
+      font-size: 24px;
+      margin-bottom: 34px;
+    }
+  }
+}

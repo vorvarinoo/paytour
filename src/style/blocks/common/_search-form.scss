@@ -1,0 +1,276 @@
+.search-form {
+  padding: 25px 0 45px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+
+  &__wrapper {
+    color: #F5F5F5;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    row-gap: 14px;
+    column-gap: 17px;
+
+    @include media-min ($md) {
+      display: inline-flex;
+      row-gap: 0;
+      column-gap: 0;
+      align-items: flex-end;
+    }
+  }
+
+  &__input-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    &--location {
+      grid-column-start: 1;
+      grid-column-end: 3;
+
+      @include media-min ($md) {
+        max-width: 202px;
+        flex-shrink: 0;
+        width: 100%;
+      }
+
+      @include media-min ($lg) {
+        max-width: 221px;
+      }
+
+      @include media-min ($xl) {
+        max-width: 263px;
+      }
+    }
+
+    &--date {
+      @include media-min ($md) {
+        max-width: 139px;
+        flex-shrink: 0;
+        width: 100%;
+      }
+
+      @include media-min ($lg) {
+        max-width: 153px;
+      }
+
+      @include media-min ($xl) {
+        max-width: 183px;
+      }
+    }
+
+    &--person {
+      grid-column-start: 1;
+      grid-column-end: 3;
+
+      @include media-min ($md) {
+        max-width: 161px;
+        flex-shrink: 0;
+        width: 100%;
+      }
+
+      @include media-min ($lg) {
+        max-width: 178px;
+      }
+
+      @include media-min ($xl) {
+        max-width: 221px;
+      }
+    }
+
+    @include media-min ($md) {
+      margin-left: 16px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__label {
+    font-weight: 700;
+    font-size: 14px;
+
+    @include media-min ($md) {
+      text-transform: uppercase;
+    }
+  }
+
+  &__input-item {
+    margin-top: 7px;
+
+    &--date {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        right: 13px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.4563 3.89908H15.4614V3.10108C15.4614 2.6265 15.0731 2.23828 14.5985 2.23828C14.1239 2.23828 13.7358 2.6265 13.7358 3.10108V3.89908H8.09847V3.10108C8.09847 2.6265 7.71025 2.23828 7.23567 2.23828C6.7611 2.23828 6.37287 2.6265 6.37287 3.10108V3.89908H4.37803C3.56128 3.89908 2.89673 4.56349 2.89673 5.38023V16.3216C2.89673 17.1384 3.56114 17.8028 4.37803 17.8028H16.1328C17.6795 17.8028 18.9374 16.5448 18.9374 14.9981V5.38023C18.9374 4.56349 18.273 3.89908 17.4563 3.89908ZM4.37803 5.07998H6.37391C6.38527 5.54482 6.76818 5.92168 7.23567 5.92168C7.70302 5.92168 8.08578 5.54482 8.09729 5.07998H13.7369C13.7484 5.54482 14.131 5.92168 14.5985 5.92168C15.066 5.92168 15.4489 5.54482 15.4604 5.07998H17.4563C17.6192 5.07998 17.7565 5.21756 17.7565 5.38023V7.68654H4.07763V5.38023C4.07763 5.21741 4.21521 5.07998 4.37803 5.07998ZM4.07763 16.3216V8.849H17.7565V14.0246H15.3435L15.3258 16.6219H4.37803C4.21521 16.6219 4.07763 16.4843 4.07763 16.3216ZM16.5071 16.5766L16.5166 15.2055H17.7416C17.6553 15.8783 17.1566 16.4224 16.5071 16.5766Z' fill='%231A3A27' /%3E%3Cpath d='M7.52052 11.6362C7.52642 11.0952 7.71935 10.6996 8.02904 10.4358C8.33889 10.1785 8.75988 10.0532 9.21571 10.0532C10.3965 10.0532 10.7881 10.8449 10.7881 11.2338C10.7881 12.1969 10.2502 12.1969 10.2502 12.2166V12.2298C10.2502 12.2826 10.9165 12.2826 10.9165 13.305C10.9165 13.8656 10.5425 14.7494 9.20966 14.7494C7.37984 14.7494 7.37423 13.2982 7.40346 12.9554H8.51395C8.50805 13.1996 8.56075 13.384 8.67175 13.5028C8.78276 13.6544 8.95237 13.7074 9.15696 13.7074C9.49012 13.7074 9.70062 13.5689 9.70062 13.193C9.70062 12.7904 9.42591 12.7179 9.15696 12.7179C8.98735 12.7179 8.90557 12.7379 8.81789 12.7512V11.854C8.90557 11.8606 8.99916 11.8804 9.15696 11.8804C9.40259 11.8804 9.71228 11.8212 9.71228 11.4651C9.71228 11.1748 9.42 11.0626 9.18043 11.0626C8.86468 11.0626 8.60754 11.2538 8.6192 11.6364L7.52052 11.6362Z' fill='%231A3A27' /%3E%3Cpath d='M12.6534 12.0516H11.7006V11.1019C12.2909 11.1152 12.8756 10.8647 12.9104 10.106H13.8691V14.6966H12.6534V12.0516Z' fill='%231A3A27' /%3E%3C/svg%3E");
+
+      }
+    }
+
+    &--person {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        right: 13px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url("data:image/svg+xml,%3Csvg width='22' height='21' viewBox='0 0 22 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.8504 18.2488V16.5488C17.8504 15.6471 17.4922 14.7823 16.8546 14.1447C16.217 13.5071 15.3522 13.1489 14.4505 13.1489H7.65064C6.74893 13.1489 5.88415 13.5071 5.24654 14.1447C4.60894 14.7823 4.25073 15.6471 4.25073 16.5488V18.2488' stroke='%231A3A27' stroke-width='1.69996' stroke-linecap='round' stroke-linejoin='round' /%3E%3Cpath d='M11.0505 9.74904C12.9283 9.74904 14.4505 8.22685 14.4505 6.34913C14.4505 4.47141 12.9283 2.94922 11.0505 2.94922C9.17283 2.94922 7.65063 4.47141 7.65063 6.34913C7.65063 8.22685 9.17283 9.74904 11.0505 9.74904Z' stroke='%231A3A27' stroke-width='1.69996' stroke-linecap='round' stroke-linejoin='round' /%3E%3C/svg%3E");
+      }
+    }
+  }
+
+
+  &__input {
+    border-radius: 9px;
+    background-color: #fff;
+    padding: 16px 13px;
+    border: none;
+    color: #1a3a27;
+    width: 100%;
+    font-size: 14px;
+
+    &--person {
+      padding-right: 48px;
+
+      @include media-min ($lg) {
+        padding-right: 0;
+      }
+    }
+
+    @include media-min ($xl) {
+      padding: 20px 16px;
+      font-size: 16px;
+    }
+  }
+
+  &__radio-wrapper {
+    margin-top: 16px;
+    display: none;
+
+    @include media-min ($md) {
+      display: flex;
+    }
+
+    @include media-min ($lg) {
+      order: 1;
+    }
+  }
+
+  &__radio-label {
+    display: flex;
+    align-items: center;
+    margin-left: 27px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+
+    @include media-min ($lg) {
+      font-size: 16px;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__radio-btn {
+    width: 0;
+    height: 0;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  &__custom-radio-btn {
+    position: relative;
+    /* Родительский элемент*/
+    display: inline-block;
+    /* Для применения рамок, размеров*/
+    width: 8px;
+    height: 8px;
+    border: 0.72px solid #fff;
+    /* Толщина, стиль, цвет рамки*/
+    border-radius: 50%;
+    /* Получение круга*/
+    vertical-align: text-top;
+    /* Выравнивание кнопки по центру*/
+    margin-right: 13px;
+    /* Отступ между кнопкой и меткой*/
+
+  }
+
+  /* Рисуем внутренний круг */
+  &__custom-radio-btn::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #F5F5F5;
+    border-radius: 50%;
+
+    /* Выравниваем по центру относительно внешнего круга */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+
+    /* Плавный переход трансформации масштабирования */
+    transition: 0.2s ease-in;
+  }
+
+  &__radio-btn:checked + &__custom-radio-btn::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  &__btn {
+    text-transform: uppercase;
+    background-color: #003580;
+    padding: 14px 0;
+    color: #F5F5F5;
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: 8px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 14px;
+    letter-spacing: 0.05em;
+
+    @include media-min ($md) {
+      padding: 14px 28px;
+      align-self: center;
+    }
+
+    @include media-min ($lg) {
+      align-self: flex-end;
+      margin-top: 0;
+      padding: 16px 17px;
+    }
+
+    @include media-min ($xl) {
+      font-size: 15px;
+      padding: 19px 28px;
+    }
+  }
+
+
+  @include media-min ($lg) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

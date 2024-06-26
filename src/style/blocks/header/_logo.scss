@@ -1,0 +1,64 @@
+.logo {
+  width: 118px;
+  height: 31px;
+  display: inline-flex;
+
+  @include media-min ($md) {
+    width: 140px;
+    height: 36px;
+  }
+
+  @include media-min ($lg) {
+    width: 172px;
+    height: 44px;
+  }
+
+  @include media-min ($xl) {
+    width: 202px;
+    height: 52px;
+  }
+
+  &--footer {
+    width: 145px;
+    height: 37px;
+
+    @include media-min ($md) {
+      width: 253px;
+      height: 65px;
+    }
+
+    @include media-min ($lg) {
+      width: 263px;
+      height: 68px;
+    }
+
+    @include media-min ($xl) {
+      width: 289px;
+      height: 75px;
+    }
+
+  }
+
+  &--detailed {
+    width: 118px;
+    height: 31px;
+
+
+    @include media-min ($lg) {
+      width: 140px;
+      height: 36px;
+    }
+
+    @include media-min ($xl) {
+      width: 202px;
+      height: 52px;
+    }
+
+  }
+
+  & img {
+    height: 100%;
+  }
+
+
+}

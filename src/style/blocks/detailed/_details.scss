@@ -1,0 +1,55 @@
+.details {
+  padding: 20px 0 30px;
+
+  @include media-min ($lg) {
+    padding: 44px 0;
+  }
+
+  &__content {
+    padding: 26px 24px 20px 20px;
+    background-image: url(../img/img-background-details.png);
+    background-repeat: no-repeat;
+    border-radius: 13px;
+    background-position: left top;
+
+    @include media-min ($lg) {
+      padding: 52px 76px;
+    }
+  }
+
+  &__title {
+    color: #fff;
+    margin-bottom: 10px;
+
+    @include media-min ($lg) {
+      margin-bottom: 36px;
+    }
+  }
+
+  &__form {
+    position: relative;
+    padding: 20px 44px 20px 22px;
+    max-width: 310px;
+
+    @include media-min ($lg) {
+      padding: 30px 82px 40px 0;
+      max-width: 426px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      background-color: #003B9580;
+      border-radius: 6px;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: -100vw;
+
+      @include media-min ($lg) {
+        border-radius: 12px;
+      }
+    }
+
+  }
+}

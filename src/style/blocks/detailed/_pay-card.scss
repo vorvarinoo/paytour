@@ -1,0 +1,123 @@
+.pay-card {
+  display: none;
+  border: 1px solid #1e1d1b33;
+  border-radius: 12px;
+  padding: 36px 30px 60px;
+  height: min-content;
+  max-width: 370px;
+
+  @include media-min ($lg) {
+    display: block;
+  }
+
+  @include media-min ($xl) {
+    max-width: 100%;
+  }
+
+  &__footnote {
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 6px;
+  }
+
+  &__row {
+
+    &--flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &--col {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &--border-top {
+      padding-top: 30px;
+      margin-top: 30px;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        background-color: #003b95;
+        top: 0;
+        left: 0;
+        height: 1px;
+        width: 100%;
+      }
+    }
+  }
+
+  &__img {
+    border-radius: 6px;
+    width: 106px;
+    height: 97px;
+    margin-right: 34px;
+    overflow: hidden;
+    flex-shrink: 0;
+
+    & img {
+      height: 100%;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 20px;
+    color: #000;
+
+    @include media-min ($xl) {
+      font-size: 24px;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 18px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 20px;
+    color: #000;
+
+    &--weight {
+      font-weight: 600;
+    }
+  }
+
+  &__data {
+    display: flex;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+  }
+
+  &__btn {
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    padding: 20px;
+    background-color: #003b95;
+    border-radius: 6px;
+    margin-bottom: 28px;
+  }
+}

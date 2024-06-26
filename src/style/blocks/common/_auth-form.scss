@@ -1,0 +1,41 @@
+.auth-form {
+  gap: 22px;
+
+  &__field {
+    gap: 22px;
+  }
+
+  &__label {
+    font-weight: 600;
+    font-size: 16px;
+
+    @include media-min ($md) {
+      font-size: 20px;
+    }
+  }
+
+  &__input {
+    font-size: 16px;
+    border: 1px solid #02409e;
+    border-radius: 6px;
+    padding: 14.5px;
+
+    @include media-min ($md) {
+      font-size: 20px;
+      border-radius: 13px;
+    }
+  }
+
+  &__btn {
+    font-weight: 600;
+    font-size: 16px;
+    padding: 13px 20px;
+    margin-top: 20px;
+    background: #02409e;
+    color: #fff;
+
+    @include media-min ($md) {
+      font-size: 24px;
+    }
+  }
+}

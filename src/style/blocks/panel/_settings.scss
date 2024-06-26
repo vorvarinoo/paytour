@@ -1,0 +1,248 @@
+.settings {
+  &__title {
+    margin-bottom: 26px;
+
+    @include media-min ($md) {
+      margin-bottom: 34px;
+    }
+
+    @include media-min ($xl) {
+      margin-bottom: 42px;
+    }
+  }
+
+  & .tabs {
+    margin-bottom: 36px;
+  }
+
+  &__content {
+    &--border {
+      &::after {
+        content: '';
+        position: absolute;
+        background-color: #02409e;
+        width: 300%;
+        height: 1px;
+        left: -200px;
+
+        @include media-min ($md) {
+          background-color: #0548ab;
+          height: 2px;
+        }
+
+        @include media-min ($lg) {
+          background-color: #0548ab;
+          height: 2px;
+          left: 0;
+          width: 300%;
+        }
+      }
+    }
+  }
+
+  &__item {
+    padding: 28px 0;
+
+    @include media-min ($md) {
+      padding: 30px 0;
+    }
+
+    @include media-min ($xl) {
+      padding: 36px 0;
+    }
+
+    &--flex {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &--bottom {
+      text-align: center;
+      padding: 24px 0;
+
+      @include media-min ($md) {
+        padding: 48px 0;
+      }
+
+      @include media-min ($lg) {
+        text-align: start;
+      }
+
+      @include media-min ($xl) {
+        padding: 56px 0;
+      }
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-weight: 700;
+    font-size: 14px;
+    color: #1e1d1b;
+    margin-bottom: 18px;
+
+    @include media-min ($md) {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+
+    @include media-min ($xl) {
+      font-size: 24px;
+      margin-bottom: 36px;
+    }
+  }
+
+  &__btn-add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #02409e;
+    padding: 22px 20px 30px;
+    border: 1px solid #02409e;
+    border-radius: 8px;
+
+    @include media-min ($md) {
+      border-radius: 10px;
+      font-size: 20px;
+      padding-top: 36px;
+      padding-bottom: 54px;
+    }
+
+    @include media-min ($xl) {
+      gap: 8px;
+      border-radius: 12px;
+      font-size: 24px;
+      padding-top: 42px;
+      padding-bottom: 60px;
+    }
+
+    &--person {
+      @include media-min ($md) {
+        & svg {
+          width: 50px;
+          height: 35px;
+        }
+      }
+
+      @include media-min ($xl) {
+        & svg {
+          width: 58px;
+          height: 40px;
+        }
+      }
+    }
+
+    &--card {
+      margin-bottom: 27px;
+
+      @include media-min ($md) {
+        margin-bottom: 32px;
+
+        & svg {
+          width: 41px;
+          height: 37px;
+        }
+      }
+
+      @include media-min ($xl) {
+        margin-bottom: 36px;
+
+        & svg {
+          width: 47px;
+          height: 42px;
+        }
+      }
+    }
+  }
+
+  &__descr {
+    font-weight: 500;
+    font-size: 14px;
+    color: #1e1d1b;
+
+    & p {
+      margin: 0;
+      margin-bottom: 22px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    @include media-min ($md) {
+      font-size: 20px;
+    }
+
+    @include media-min ($xl) {
+      font-size: 24px;
+    }
+  }
+
+  &__checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    @include media-min ($md) {
+      gap: 18px;
+    }
+
+    & .checkbox {
+      font-size: 14px;
+
+      @include media-min ($md) {
+        font-size: 20px;
+      }
+
+      @include media-min ($xl) {
+        font-size: 24px;
+      }
+    }
+
+    & .checkbox__box {
+      border-radius: 5px;
+      width: 20px;
+      height: 20px;
+      margin-right: 15px;
+
+      @include media-min ($md) {
+        border-radius: 10px;
+        width: 35px;
+        height: 35px;
+        margin-right: 22px;
+      }
+
+      @include media-min ($xl) {
+        border-radius: 11px;
+        width: 41px;
+        height: 41px;
+        margin-right: 26px;
+      }
+    }
+  }
+
+  &__btn {
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    background-color: #02409e;
+    border-radius: 8px;
+    padding: 10px 54px;
+
+    @include media-min ($md) {
+      font-size: 20px;
+      border-radius: 10px;
+      padding: 18px 154px;
+    }
+
+    @include media-min ($xl) {
+      font-size: 24px;
+      border-radius: 12px;
+      padding: 20px 176px;
+    }
+  }
+}

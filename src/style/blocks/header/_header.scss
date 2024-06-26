@@ -1,0 +1,113 @@
+.header {
+  position: absolute;
+  padding: 26px 0;
+  width: 100%;
+  background: transparent;
+  z-index: 3;
+
+  &--absolute-bg-color {
+    position: relative;
+    background: linear-gradient(180deg, #0b58c5 0%, #003b95 70.5%);
+  }
+
+
+  @include media-min ($md) {
+    padding: 46px 0;
+  }
+
+
+  &-top {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+  }
+
+  &__left {
+    flex-grow: 1;
+  }
+
+  &__right {
+    display: none;
+
+    @include media-min ($md) {
+      display: flex;
+    }
+  }
+
+  &__question,
+  &__notify,
+  &__chosen,
+  &__login {
+    display: flex;
+    align-items: center;
+  }
+
+  &__question {
+    font-weight: 600;
+    font-size: 14px;
+
+    & img {
+      margin-right: 10px;
+    }
+
+    @include media-min ($lg) {
+      font-size: 16px;
+
+      & img {
+        width: 33px;
+        height: 33px;
+      }
+    }
+
+    @include media-min ($xl) {
+      font-size: 18px;
+    }
+  }
+
+  &__notify {
+    margin-left: 12px;
+
+
+    @include media-min ($lg) {
+      margin-left: 35px;
+
+      & img {
+        width: 29px;
+        height: 33px;
+      }
+    }
+  }
+
+  &__chosen {
+    margin-left: 10px;
+
+    @include media-min ($lg) {
+      margin-left: 15px;
+
+      & img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  &__login {
+    font-weight: 500;
+    font-size: 14px;
+    background-color: var(--blue100);
+    border-radius: 12px;
+    padding: 6px 40px;
+    margin-left: 20px;
+
+    @include media-min ($lg) {
+      font-size: 16px;
+      padding: 7px 63px;
+    }
+
+    @include media-min ($xl) {
+      font-size: 18px;
+    }
+  }
+
+}
