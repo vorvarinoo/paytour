@@ -1,0 +1,91 @@
+<section class="auth signup-page">
+  <div class="container">
+    <div class="auth__content">
+      <h1 class="indent-reset auth__title">
+        Зарегистрируйте аккаунт
+      </h1>
+      <div class="tabs auth__tabs">
+        <div class="tabs__buttons auth__buttons">
+          <button class="btn-reset tabs__btn">Номер телефона</button>
+          <button class="btn-reset tabs__btn is-selected">Почта</button>
+        </div>
+        <div>
+          <div>
+            <form class="form form__inner auth-form"
+                  id="signup-form"
+                  action="">
+              <div class="form__field auth-form__field">
+                <label for="first-name"
+                       class="form__label auth-form__label">Имя</label>
+                <input name="first_name"
+                       value=""
+                       type="text"
+                       class="form__input auth-form__input"
+                       id="first-name">
+              </div>
+              <div class="form__field auth-form__field">
+                <label for="last-name"
+                       class="form__label auth-form__label">Фамилия</label>
+                <input name="last_name"
+                       value=""
+                       type="text"
+                       class="form__input auth-form__input"
+                       id="last-name">
+              </div>
+              <div class="form__field auth-form__field">
+                <label for="email"
+                       class="form__label auth-form__label">Почта</label>
+                <input name="email"
+                       value=""
+                       type="email"
+                       class="form__input auth-form__input"
+                       id="email">
+              </div>
+              <div class="form__field auth-form__field">
+                <label for="password"
+                       class="auth-form__label auth-form__field">Пароль</label>
+                <input name="password"
+                       value=""
+                       type="password"
+                       class="form__input auth-form__input"
+                       id="password">
+              </div>
+              <button type="submit"
+                      class="btn-reset form__btn auth-form__btn">Зарегистрироваться</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="auth__alternative-item">
+        <span class="auth__alternative-line"></span>
+        <span>или</span>
+        <span class="auth__alternative-line"></span>
+      </div>
+      <ul class="list-reset auth__list">
+        <li class="auth__item">
+          <a href="#">
+            <img src="img/icon-google.png"
+                 alt="Google">
+          </a>
+        </li>
+        <li class="auth__item">
+          <a href="#">
+            <img src="img/icon-vk.png"
+                 alt="В контакте">
+          </a>
+        </li>
+        <li class="auth__item">
+          <a href="#">
+            <img src="img/icon-state-services.png"
+                 alt="Гос услуги">
+          </a>
+        </li>
+      </ul>
+      <label class="checkbox signup-page__checkbox">
+        <input type="checkbox">
+        <span class="checkbox__box"></span>
+        Я даю свое согласие на обработку персональных данных
+      </label>
+    </div>
+  </div>
+</section>

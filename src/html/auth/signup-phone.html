@@ -1,8 +1,8 @@
-<section class="auth login-page">
+<section class="auth signup-page">
   <div class="container">
     <div class="auth__content">
       <h1 class="indent-reset auth__title">
-        Войдите или&nbsp;<a href="page-signup.html">зарегистрируйте</a>&nbsp;аккаунт
+        Зарегистрируйте аккаунт
       </h1>
       <div class="tabs auth__tabs">
         <div class="tabs__buttons auth__buttons">
@@ -12,31 +12,50 @@
         <div>
           <div>
             <form class="form form__inner auth-form"
-                  id="login-form"
+                  id="signup-form"
                   action="">
+              <div class="form__field auth-form__field">
+                <label for="first-name"
+                       class="form__label auth-form__label">Имя</label>
+                <input name="first_name"
+                       value=""
+                       type="text"
+                       class="form__input auth-form__input"
+                       id="first-name">
+              </div>
+              <div class="form__field auth-form__field">
+                <label for="last-name"
+                       class="form__label auth-form__label">Фамилия</label>
+                <input name="last_name"
+                       value=""
+                       type="text"
+                       class="form__input auth-form__input"
+                       id="last-name">
+              </div>
               <div class="form__field auth-form__field">
                 <label for="phone"
                        class="form__label auth-form__label">Номер телефона</label>
-                <input value=""
+                <input name="phone"
+                       value=""
                        type="tel"
                        class="form__input auth-form__input"
                        id="phone">
               </div>
               <div class="form__field auth-form__field">
                 <label for="password"
-                       class="form__label auth-form__label">Пароль</label>
-                <input value=""
+                       class="auth-form__label auth-form__field">Пароль</label>
+                <input name="password"
+                       value=""
                        type="password"
                        class="form__input auth-form__input"
                        id="password">
               </div>
-              <button class="btn-reset form__btn auth-form__btn">Войти</button>
+              <button type="submit"
+                      class="btn-reset form__btn auth-form__btn">Зарегистрироваться</button>
             </form>
           </div>
         </div>
       </div>
-      <a href="#"
-         class="login-page__forgot-password">Напомнить пароль</a>
       <div class="auth__alternative-item">
         <span class="auth__alternative-line"></span>
         <span>или</span>
@@ -62,6 +81,11 @@
           </a>
         </li>
       </ul>
+      <label class="checkbox signup-page__checkbox">
+        <input type="checkbox">
+        <span class="checkbox__box"></span>
+        Я даю свое согласие на обработку персональных данных
+      </label>
     </div>
   </div>
 </section>

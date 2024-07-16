@@ -1,8 +1,8 @@
-<section class="auth signup-page">
+<section class="auth login-page">
   <div class="container">
     <div class="auth__content">
       <h1 class="indent-reset auth__title">
-        Зарегистрируйте аккаунт
+        Войдите или&nbsp;<a href="page-signup.html">зарегистрируйте</a>&nbsp;аккаунт
       </h1>
       <div class="tabs auth__tabs">
         <div class="tabs__buttons auth__buttons">
@@ -12,12 +12,13 @@
         <div>
           <div>
             <form class="form form__inner auth-form"
-                  id="signup-form"
+                  id="login-form"
                   action="">
               <div class="form__field auth-form__field">
                 <label for="email"
                        class="form__label auth-form__label">Почта</label>
-                <input value=""
+                <input name="email"
+                       value=""
                        type="email"
                        class="form__input auth-form__input"
                        id="email">
@@ -25,16 +26,20 @@
               <div class="form__field auth-form__field">
                 <label for="password"
                        class="auth-form__label auth-form__field">Пароль</label>
-                <input value=""
+                <input name="password"
+                       value=""
                        type="password"
                        class="form__input auth-form__input"
                        id="password">
               </div>
-              <button class="btn-reset form__btn auth-form__btn">Зарегистрироваться</button>
+              <button type="submit"
+                      class="btn-reset form__btn auth-form__btn">Войти</button>
             </form>
           </div>
         </div>
       </div>
+      <a href="#"
+         class="login-page__forgot-password">Напомнить пароль</a>
       <div class="auth__alternative-item">
         <span class="auth__alternative-line"></span>
         <span>или</span>
@@ -60,11 +65,6 @@
           </a>
         </li>
       </ul>
-      <label class="checkbox signup-page__checkbox">
-        <input type="checkbox">
-        <span class="checkbox__box"></span>
-        Я даю свое согласие на обработку персональных данных
-      </label>
     </div>
   </div>
 </section>
