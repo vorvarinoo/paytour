@@ -12,7 +12,7 @@
   <link rel="preload" href="fonts/opensans-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style/vendor-bundle.css">
   <link rel="stylesheet" href="style/main.css">
-  <title>Авторизация</title>
+  <title>Регистрация</title>
 </head>
 
 <body class="indent-reset site">
@@ -24,7 +24,7 @@
         <div class="header-top">
           <div class="header__left">
             <a href="/" class="logo">
-              <img src="img/logo.png" width="202" height="52" alt="Логотип PAY TOUR">
+              <img src="./img/logo.png" width="202" height="52" alt="Логотип PAY TOUR">
             </a>
           </div>
           <div class="header__right">
@@ -33,7 +33,7 @@
             <a class="header__notify" href="#">
               <img src="img/icon-notify.svg" aria-hidden="true" width="22" height="25">
             </a>
-            <a class="header__chosen" href="page-no-favorites-panel.html">
+            <a class="header__chosen" href="#">
               <img src="img/icon-chosen.svg" aria-hidden="true" width="25" height="25">
             </a>
             <a class="header__login" href="page-login.html">ВОЙТИ</a>
@@ -53,7 +53,7 @@
                     <a href="#travel-blog">Блог о путешествиях</a>
                     <a href="#main-info">Преимущества TourPay</a>
                     <a href="#">Чат с поддержкой</a>
-                    <a href="page-no-favorites-panel.html">Мои избранные отели</a>
+                    <a href="tour/page-no-favorites-panel.html">Мои избранные отели</a>
                   </div>
                 </nav>
               </div>
@@ -66,11 +66,11 @@
     </header>
     <div class="site__content">
       <main>
-        <section class="auth login-page">
+        <section class="auth signup-page">
           <div class="container">
             <div class="auth__content">
               <h1 class="indent-reset auth__title">
-                Войдите или&nbsp;<a href="page-signup.html">зарегистрируйте</a>&nbsp;аккаунт
+                Зарегистрируйте аккаунт
               </h1>
               <div class="tabs auth__tabs">
                 <div class="tabs__buttons auth__buttons">
@@ -79,21 +79,28 @@
                 </div>
                 <div>
                   <div>
-                    <form class="form form__inner auth-form" id="login-form" action="">
+                    <form class="form form__inner auth-form" id="signup-form" action="">
+                      <div class="form__field auth-form__field">
+                        <label for="first-name" class="form__label auth-form__label">Имя</label>
+                        <input name="first_name" value="" type="text" class="form__input auth-form__input" id="first-name">
+                      </div>
+                      <div class="form__field auth-form__field">
+                        <label for="last-name" class="form__label auth-form__label">Фамилия</label>
+                        <input name="last_name" value="" type="text" class="form__input auth-form__input" id="last-name">
+                      </div>
                       <div class="form__field auth-form__field">
                         <label for="phone" class="form__label auth-form__label">Номер телефона</label>
-                        <input value="" type="tel" class="form__input auth-form__input" id="phone">
+                        <input name="phone" value="" type="tel" class="form__input auth-form__input" id="phone">
                       </div>
                       <div class="form__field auth-form__field">
-                        <label for="password" class="form__label auth-form__label">Пароль</label>
-                        <input value="" type="password" class="form__input auth-form__input" id="password">
+                        <label for="password" class="auth-form__label auth-form__field">Пароль</label>
+                        <input name="password" value="" type="password" class="form__input auth-form__input" id="password">
                       </div>
-                      <button class="btn-reset form__btn auth-form__btn">Войти</button>
+                      <button type="submit" class="btn-reset form__btn auth-form__btn">Зарегистрироваться</button>
                     </form>
                   </div>
                 </div>
               </div>
-              <a href="#" class="login-page__forgot-password">Напомнить пароль</a>
               <div class="auth__alternative-item">
                 <span class="auth__alternative-line"></span>
                 <span>или</span>
@@ -116,6 +123,11 @@
                   </a>
                 </li>
               </ul>
+              <label class="checkbox signup-page__checkbox">
+                <input type="checkbox">
+                <span class="checkbox__box"></span>
+                Я даю свое согласие на обработку персональных данных
+              </label>
             </div>
           </div>
         </section>
@@ -214,7 +226,7 @@
               </div>
 
               <a class="logo logo--footer" href="/">
-                <img src="img/logo-footer.png" width="289" height="75" alt="Логотип PAY TOUR"></a>
+                <img src="img/logo.png" width="289" height="75" alt="Логотип PAY TOUR"></a>
             </div>
 
 

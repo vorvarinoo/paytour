@@ -12,13 +12,13 @@
   <link rel="preload" href="fonts/opensans-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style/vendor-bundle.css">
   <link rel="stylesheet" href="style/main.css">
-  <title>Личный кабинет Избранное</title>
+  <title>Регистрация</title>
 </head>
 
 <body class="indent-reset site">
   <div aria-hidden="true" id="site-top"></div>
   <div class="site__container">
-    <header class="site__header header header--absolute-bg-color header-auth-user">
+    <header class="site__header header header--absolute-bg-color">
       <div class="header-bg"></div>
       <div class="container">
         <div class="header-top">
@@ -36,10 +36,8 @@
             <a class="header__chosen" href="page-no-favorites-panel.html">
               <img src="img/icon-chosen.svg" aria-hidden="true" width="25" height="25">
             </a>
-            <a class="header__login header-auth-user__logout" href="page-login.html">ВЫЙТИ</a>
-            <div class="header-auth-user__user-icon" href="page-login.html">
-              <img src="img/user-icon.jpg" alt="Фото пользователя">
-            </div>
+            <a class="header__login" href="page-login.html">ВОЙТИ</a>
+
           </div>
           <div class="burger">
             <button class="btn-reset burger__btn" aria-label="Меню">
@@ -66,104 +64,74 @@
       </div>
 
     </header>
-
     <div class="site__content">
-
       <main>
-        <div class="container">
-          <div class="row">
-            <aside class="sidebar-panel sidebar-panel--padding d-none d-lg-block col-lg-5 col-xl-4">
-              <div class="sidebar-panel__inner">
-                <div class="sidebar-panel__inner-top">
-                  <div class="sidebar-panel__name-user">Имя пользователя</div>
-                  <div class="sidebar-panel__buttons">
-                    <a href="/page-settings-individual-panel.html">
-                      <svg width="24" height="24" aria-hidden="true">
-                        <use xlink:href="img/sprite.svg#icon-settings"></use>
-                      </svg>
-                    </a>
-                    <a href="/page-login.html">
-                      <svg width="23" height="26" aria-hidden="true">
-                        <use xlink:href="img/sprite.svg#icon-logout"></use>
-                      </svg>
-                    </a>
+        <section class="auth signup-page">
+          <div class="container">
+            <div class="auth__content">
+              <h1 class="indent-reset auth__title">
+                Зарегистрируйте аккаунт
+              </h1>
+              <div class="tabs auth__tabs">
+                <div class="tabs__buttons auth__buttons">
+                  <button class="btn-reset tabs__btn">Номер телефона</button>
+                  <button class="btn-reset tabs__btn is-selected">Почта</button>
+                </div>
+                <div>
+                  <div>
+                    <form class="form form__inner auth-form" id="signup-form" action="">
+                      <div class="form__field auth-form__field">
+                        <label for="first-name" class="form__label auth-form__label">Имя</label>
+                        <input name="first_name" value="" type="text" class="form__input auth-form__input" id="first-name">
+                      </div>
+                      <div class="form__field auth-form__field">
+                        <label for="last-name" class="form__label auth-form__label">Фамилия</label>
+                        <input name="last_name" value="" type="text" class="form__input auth-form__input" id="last-name">
+                      </div>
+                      <div class="form__field auth-form__field">
+                        <label for="email" class="form__label auth-form__label">Почта</label>
+                        <input name="email" value="" type="email" class="form__input auth-form__input" id="email">
+                      </div>
+                      <div class="form__field auth-form__field">
+                        <label for="password" class="auth-form__label auth-form__field">Пароль</label>
+                        <input name="password" value="" type="password" class="form__input auth-form__input" id="password">
+                      </div>
+                      <button type="submit" class="btn-reset form__btn auth-form__btn">Зарегистрироваться</button>
+                    </form>
                   </div>
                 </div>
-                <ul class="list-reset sidebar-panel__list">
-                  <li class="sidebar-panel__item">
-                    <a class="sidebar-panel__link" href="#">
-                      Мои бронирования
-                    </a>
-                  </li>
-                  <li class="sidebar-panel__item">
-                    <a class="sidebar-panel__link" href="page-favorites-panel.html" data-value="1">
-                      Избранное
-                    </a>
-                  </li>
-                </ul>
               </div>
-            </aside>
-            <section class="panel favorites col-lg-7 col-xl-8">
-
-
-              <h1 class="title title--large title--case panel__title favorites__title panel panel--spacing">ИЗБРАННОЕ</h1>
-
-              <div class="panel panel--spacing-left">
-                <div class="panel__content panel__content--width-max">
-                  <div class="tabs panel__tabs">
-                    <div class="favorites">
-                      <div class="tabs__buttons panel__buttons">
-                        <button class="btn-reset tabs__btn is-selected">Избранное</button>
-                        <button class="btn-reset tabs__btn">Сохраненные поиски</button>
-                      </div>
-                    </div>
-                    <div>
-                      <ul class="list-reset favorites__btn-list">
-                        <li>
-                          <button class="btn-reset favorites__btn is-selected">Отели</button>
-                        </li>
-                        <li>
-                          <button class="btn-reset favorites__btn">Квартиры</button>
-                        </li>
-                        <li>
-                          <button class="btn-reset favorites__btn">Туры</button>
-                        </li>
-                        <li>
-                          <button class="btn-reset favorites__btn">Ж/Д</button>
-                        </li>
-                        <li>
-                          <button class="btn-reset favorites__btn">Авиа</button>
-                        </li>
-                      </ul>
-                      <div>
-                        <div class="panel__info favorites__info">
-                          <p>
-                            У вас пока нет ничего в избранном.
-                          </p>
-                          <p>
-                            Начните отмечать «сердечком» понравившиеся
-                            отели, квартиры, туры, ж/д или авиабилеты
-                            и они появятся здесь.
-                          </p>
-                          <p>
-                            Сохраняйте отели, чтобы вернуться к ним
-                            в будущем или поделиться ими с друзьями.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
+              <div class="auth__alternative-item">
+                <span class="auth__alternative-line"></span>
+                <span>или</span>
+                <span class="auth__alternative-line"></span>
               </div>
-
-            </section>
-
+              <ul class="list-reset auth__list">
+                <li class="auth__item">
+                  <a href="#">
+                    <img src="img/icon-google.png" alt="Google">
+                  </a>
+                </li>
+                <li class="auth__item">
+                  <a href="#">
+                    <img src="img/icon-vk.png" alt="В контакте">
+                  </a>
+                </li>
+                <li class="auth__item">
+                  <a href="#">
+                    <img src="img/icon-state-services.png" alt="Гос услуги">
+                  </a>
+                </li>
+              </ul>
+              <label class="checkbox signup-page__checkbox">
+                <input type="checkbox">
+                <span class="checkbox__box"></span>
+                Я даю свое согласие на обработку персональных данных
+              </label>
+            </div>
           </div>
-        </div>
-
+        </section>
       </main>
-
     </div>
     <footer class="site__footer footer">
       <div class="footer__top">
