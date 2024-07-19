@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="preload" href="fonts/opensans-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- <link rel="preload" href="fonts/opensans-regular.woff2" as="font" type="font/woff2" crossorigin> -->
   <link rel="stylesheet" href="style/vendor-bundle.css">
   <link rel="stylesheet" href="style/main.css">
   <title>Регистрация</title>
@@ -42,7 +42,7 @@
           <div class="burger">
             <button class="btn-reset burger__btn" aria-label="Меню">
               <svg width="28" height="18" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#icon-burger"></use>
+                <!-- <use xlink:href="img/sprite.svg#icon-burger"></use> -->
               </svg>
             </button>
             <div id="dropdown" class="burger__dropdown d-block">
@@ -79,25 +79,37 @@
                 </div>
                 <div>
                   <div>
-                    <form class="form form__inner auth-form" id="signup-form" action="">
+                    <form class="form form__inner auth-form" id="signup-form">
                       <div class="form__field auth-form__field">
-                        <label for="first-name" class="form__label auth-form__label">Имя</label>
-                        <input name="first_name" value="" type="text" class="form__input auth-form__input" id="first-name">
+                          <label for="first-name" class="form__label auth-form__label">Имя</label>
+                          <input name="first_name" value="" type="text" class="form__input auth-form__input" id="first-name">
                       </div>
                       <div class="form__field auth-form__field">
-                        <label for="last-name" class="form__label auth-form__label">Фамилия</label>
-                        <input name="last_name" value="" type="text" class="form__input auth-form__input" id="last-name">
+                          <label for="last-name" class="form__label auth-form__label">Фамилия</label>
+                          <input name="last_name" value="" type="text" class="form__input auth-form__input" id="last-name">
                       </div>
                       <div class="form__field auth-form__field">
-                        <label for="email" class="form__label auth-form__label">Почта</label>
-                        <input name="email" value="" type="email" class="form__input auth-form__input" id="email">
+                          <label for="email" class="form__label auth-form__label">Почта</label>
+                          <input name="email" value="" type="email" class="form__input auth-form__input" id="email">
                       </div>
                       <div class="form__field auth-form__field">
-                        <label for="password" class="auth-form__label auth-form__field">Пароль</label>
-                        <input name="password" value="" type="password" class="form__input auth-form__input" id="password">
+                          <label for="password" class="auth-form__label auth-form__field">Пароль</label>
+                          <input name="password" value="" type="password" class="form__input auth-form__input" id="password">
+                      </div>
+                      <div class="form__field auth-form__field">
+                          <label for="type" class="form__label auth-form__label">Роль</label>
+                          <select name="type" class="form__input auth-form__input" id="type">
+                              <option value="employee">Employee</option>
+                              <option value="finance">Finance</option>
+                              <option value="manager">Manager</option>
+                              <option value="master">Master</option>
+                              <option value="self_booker">Self Booker</option>
+                              <option value="supervisor">Supervisor</option>
+                              <option value="travel_manager">Travel Manager</option>
+                          </select>
                       </div>
                       <button type="submit" class="btn-reset form__btn auth-form__btn">Зарегистрироваться</button>
-                    </form>
+                  </form>
                   </div>
                 </div>
               </div>
@@ -235,8 +247,8 @@
       </div>
     </footer>
   </div>
-  <script src="js/vendor-bundle.js"></script>
-  <script src="js/main.js" type="module"></script>
+  <!-- <script src="js/vendor-bundle.js"></script> -->
+  <script src="src/register.js" type="module"></script>
 </body>
 
 </html>
